@@ -13,9 +13,9 @@ v1.0 beta
 ```
 Add this tag to your web-page inside of your pages `<head>` tag.
 
-## CSSheet Syntax
+## CSSheet Syntax:
 
-#### Background color:
+### Background color:
 
 Default CSSheet colors: Black, white, red, orange, yellow, aqua, blue, purple (You can always add more yourself)
 

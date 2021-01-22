@@ -1,0 +1,247 @@
+:root {
+    /* Colours */
+    --white: white;
+    --black: black;
+    --red: #ff4959;
+    --orange: #ff9541;
+    --yellow: #ffd652;
+    --aqua: #00c09a;
+    --blue: #3484ff;
+    --purple: #a868ff;
+    /* Feel free to add more colours for your page by downloading your own local copy and editing it */
+
+    /* Border Radius */
+    --none: 0px;
+    --rounded-box: 5px;
+    --curved-box: 12px;
+}
+
+/* See Readme for full documentation */
+
+/* Background colours */
+
+body {
+    font-family: Arial;
+}
+
+.bg-white {
+    background-color: var(--white)
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-aqua {
+    background-color: var(--aqua);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+/* Text colours / foreground colours */
+
+.fg-white {
+    color: var(--white)
+}
+
+.fg-black {
+    color: var(--black);
+}
+
+.fg-red {
+    color: var(--red);
+}
+
+.fg-orange {
+    color: var(--orange);
+}
+
+.fg-yellow {
+    color: var(--yellow);
+}
+
+.fg-aqua {
+    color: var(--aqua);
+}
+
+.fg-blue {
+    color: var(--blue);
+}
+
+.fg-purple {
+    color: var(--purple);
+}
+
+/* Border colours / foreground colours */
+
+.bdc-white {
+    border-color: var(--white)
+}
+
+.bdc-black {
+    border-color: var(--black);
+}
+
+.bdc-red {
+    border-color: var(--red);
+}
+
+.bdc-orange {
+    border-color: var(--orange);
+}
+
+.bdc-yellow {
+    border-color: var(--yellow);
+}
+
+.bdc-aqua {
+    border-color: var(--aqua);
+}
+
+.bdc-blue {
+    border-color: var(--blue);
+}
+
+.bdc-purple {
+    border-color: var(--purple);
+}
+
+/* Responsive Width (in percentages) */
+
+.wd-10 {
+    width: 10%;
+}
+
+.wd-25 {
+    width: 25%;
+}
+
+.wd-50 {
+    width: 50%;
+}
+
+.wd-75 {
+    width: 75%
+}
+
+.wd-100 {
+    width: 100%
+}
+
+.wd-auto {
+    width: auto;
+}
+/* Feel free to add more width classes by downloading the file and editing it */
+
+/* Responsive Height (in percentages) */
+
+.ht-10 {
+    height: 10%;
+}
+
+.ht-25 {
+    height: 25%;
+}
+
+.ht-50 {
+    height: 50%;
+}
+
+.ht-75 {
+    height: 75%
+}
+
+.ht-100 {
+    height: 100%
+}
+
+.ht-auto {
+    height: auto;
+}
+/* Feel free to add more height classes by downloading the file and editing it */
+
+/* Border radius */
+
+.bdr-none {
+    border-radius: var(--none)
+}
+
+.bdr-rounded {
+    border-radius: var(--rounded-box);
+}
+
+.bdr-curved {
+    border-radius: var(--curved-box);
+}
+/* Feel free to add more border radius classes by downloading the file and editing it */
+
+/* Text align */
+.ta-left {
+    text-align: left;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+/* Border style */
+
+.bds-solid {
+    border-style: solid;
+}
+
+.bds-dotted {
+    border-style: dotted; 
+}
+
+.bds-dashed {
+    border-style: dashed;
+}
+
+/* Border width */
+
+.bdw-1 {
+    border-width: 1px;
+}
+
+.bdw-2 {
+    border-width: 2px;
+}
+
+.bdw-3 {
+    border-width: 3px;
+}
+
+.bdw-4 {
+    border-width: 4px;
+}
+
+.bdw-5 {
+    border-width: 5px;
+}
+
+.bdw-10 {
+    border-width: 10px;
+}

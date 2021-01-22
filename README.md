@@ -3,7 +3,7 @@ The official repository for CSSheet! A Bootstrap-compatible CSS framework which 
 
 CSSheet works by creating CSS classes and allowing you to insert them into any HTML tag
 
-v1.0 beta
+v1.0.0 beta
 # Documentation:
 
 Documentation includes everything! Press CTRL+F to find specifics!
@@ -91,3 +91,43 @@ Example:
 ```
 This will create a divider with rounded corners.
 
+### Border width:
+
+Border width lengths: 1, 2, 3, 4, 5, 10
+
+Border width syntax is `bdw-<width>`
+
+Example:
+```html
+<div class="bdw-5">
+```
+This will create a divider with a border width of 5 pixels.
+
+### Border styles:
+
+Border styles: solid, dotted, dashed
+
+Border style syntax is: `bds-<style>`
+
+Example:
+```html
+<div class="bds-solid>
+```
+This will create a divider with a solid border.
+
+### Text align:
+
+Text align: left, center, right
+
+Text align syntax is: `ta-<position>`
+
+Example:
+```html
+<div class="ta-center">
+```
+This creates a divider where all of the text and elements inside of it will be centered inside of the divider.
+
+# Credits
+Made with love by Adam Salt and Cob:web Development
+
+#### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://discord.gg/RsJDffM9gd

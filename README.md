@@ -1,9 +1,8 @@
-# CSSheet (Alpha)
+# CSSheet v1.1 [Alpha]
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily! 
 
 CSSheet works by creating CSS classes and allowing you to insert them into any HTML tag
 
-v1.1 Alpha
 # Documentation:
 
 Documentation includes everything! Press CTRL+F to find specifics!

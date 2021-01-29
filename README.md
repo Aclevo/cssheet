@@ -1,14 +1,14 @@
 # CSSheet (Alpha)
-The official repository for CSSheet! A Bootstrap-compatible CSS framework which allows you to make great websites easily! 
+The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily! 
 
 CSSheet works by creating CSS classes and allowing you to insert them into any HTML tag
 
-v1.0.0 Alpha
+v1.1 Alpha
 # Documentation:
 
 Documentation includes everything! Press CTRL+F to find specifics!
 
-Includes: background color, foreground color, border color, width, height, border radius, border width, border style, text align
+Includes: background color, background images, foreground color, border color, width, height, border radius, border width, border style, text align, font size, opacity/transparency, opacity on hover, Background with opacity, text decoration
 
 ## How to add CSSheet to your web-page
 
@@ -30,6 +30,18 @@ Example:
 <div class="bg-red">
 ```
 This will create a divider with a red background
+
+### Background images
+
+Default CSSheet images: cloudy-peaks, lovely-mountain, midnight-city, night-sky, night-town, sea-rock
+
+The background image syntax is `bgi-<image-name>`
+
+Example:
+```html
+<body class="bgi-night-town">
+```
+This will give the page body the background image "night-town"
 
 ### Foreground (text) color: 
 
@@ -57,7 +69,7 @@ This will set the border color to aqua
 
 ### (Responsive) width:
 
-Width lengths: 10%, 25%, 50%, 75%, 100%, auto
+Width lengths (in vw): 10, 25, 50, 75, 100, auto
 
 Width syntax is `wd-<width>`
 
@@ -65,19 +77,19 @@ Example:
 ```html
 <div class="wd-10">
 ```
-This will create a divider with a width of 10%
+This will create a divider with a width of 10vw
 
 ### (Responsive) height:
 
-Height lengths: 10%, 25%, 50%, 75%, 100%, auto
+Height lengths (in vh): 10, 25, 50, 75, 100, auto
 
-Height syntax is `ht-<width>`
+Height syntax is `ht-<height>`
 
 Example:
 ```html
 <div class="ht-50">
 ```
-This will create a divider with a height of 50%
+This will create a divider with a height of 50vh
 
 ### Border radius:
 
@@ -127,7 +139,67 @@ Example:
 ```
 This creates a divider where all of the text and elements inside of it will be centered inside of the divider.
 
+### Font size:
+
+Font sizes (in rem): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+Font size syntax is `fs-<size>`
+
+Example:
+```html
+<p class="fs-4">
+```
+This creates a paragraph tag with a font size of 4rem
+
+### Opacity/Transparency
+
+Opacity: 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 (00 = 0.0, 01 = 0.1)
+
+Opacity syntax is `op-<opacity>`
+
+Example:
+```html
+<div class="op-05">
+```
+This creates a divider with an opacity/transparency of 0.5
+
+### Opacity on hover
+
+Opacity on hover: 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 (00 = 0.0, 01 = 0.1)
+
+Opacity on hover syntax is `oh-<opacity>`
+
+Example:
+```html
+<div class="oh-05">
+```
+This creates a divider and when the mouse hovers over it, the opacity will change to 0.5
+
+### Backgrounds with opacity
+
+Default colors: black, white
+
+Backgrounds with opacity syntax: `op-bg-<color>`
+
+Example:
+```html
+<div class="bg-op-black">
+```
+This creates a divider, which is transparent and black
+
+### Text decoration
+
+Text decorations: bold, underline, none
+
+Text decoration syntax: `td-<decoration>`
+
+Example:
+```html
+<a href="https://cob-web.dev/discord" class="td-underline">
+```
+This creates a hyperlink, with the text decoration underline.
+
 # Credits
 Made with love by Adam Salt and Cob:web Development
 
-#### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://discord.gg/RsJDffM9gd
+#### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.dev/discord

@@ -1,4 +1,4 @@
-# CSSheet v1.1 [Alpha]
+# CSSheet v1.1.1 [Alpha]
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily! 
 
 CSSheet works by creating CSS classes and allowing you to insert them into any HTML tag
@@ -140,7 +140,7 @@ This creates a divider where all of the text and elements inside of it will be c
 
 ### Font size:
 
-Font sizes (in rem): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Font sizes (in vw): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 Font size syntax is `fs-<size>`
 
@@ -148,7 +148,7 @@ Example:
 ```html
 <p class="fs-4">
 ```
-This creates a paragraph tag with a font size of 4rem
+This creates a paragraph tag with a font size of 4vw
 
 ### Opacity/Transparency
 

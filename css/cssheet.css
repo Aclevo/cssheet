@@ -301,46 +301,46 @@ body {
 
 /* v1.1 alpha */
 
-/* Font Size (in rem) */
+/* Font Size (in vw. changed from rem to make it dynamically sized. if i've done something wrong please hit me in the head with a brick) */
 
 .fs-1 {
-    font-size: 1rem;
+    font-size: 1vw;
 }
 
 .fs-2 {
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 .fs-3 {
-    font-size: 3rem;
+    font-size: 3vw;
 }
 
 .fs-4 {
-    font-size: 4rem;
+    font-size: 4vw;
 }
 
 .fs-5 {
-    font-size: 5rem;
+    font-size: 5vw;
 }
 
 .fs-6 {
-    font-size: 6rem;
+    font-size: 6vw;
 }
 
 .fs-7 {
-    font-size: 7rem;
+    font-size: 7vw;
 }
 
 .fs-8 {
-    font-size: 8rem;
+    font-size: 8vw;
 }
 
 .fs-9 {
-    font-size: 9rem;
+    font-size: 9vw;
 }
 
 .fs-10 {
-    font-size: 10rem;
+    font-size: 10vw;
 }
 
 /* Opacity */

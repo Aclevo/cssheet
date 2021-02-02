@@ -198,9 +198,10 @@ Example:
 ```
 This creates a hyperlink, with the text decoration underline.
 
-# Credits
-Made with love by Adam Salt and Cob:web Development
+## Made with love by Cob:web Development and our Open source contributors:
+
+Adam Salt - Lead Developer
 
 Jaiden Collins, Official Cob:web Developer - Contributing a fix that made dynamic font-sizes not work on mobile
 
-#### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.dev/discord
+### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.dev/discord

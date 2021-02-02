@@ -201,4 +201,6 @@ This creates a hyperlink, with the text decoration underline.
 # Credits
 Made with love by Adam Salt and Cob:web Development
 
+Jaiden Collins, Official Cob:web Developer - Contributing a fix that made dynamic font-sizes not work on mobile
+
 #### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.dev/discord

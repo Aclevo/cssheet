@@ -1,5 +1,5 @@
 /* 
-CSSheet - v1.1 Alpha
+CSSheet - v1.1.1 Alpha
 Made with love by Cob:web Development
 See GitHub readme for full documentation
 */
@@ -471,11 +471,7 @@ body {
 
 
 /* 
-Changelog: v1.1 Alpha
-Added Opacity & Rgba Background Opacity
-Created a class allowing opacity on mouse hover
-Created a class for background images and added a few default background images
-Allowed changable font size.
-Changed width and height to use vw and vh instead of percentages.
-Text decoration
+Changelog: v1.1.1 Alpha
+We have fixed the font-size bug for mobile devices, meaning that websites made in CSSheet will be a lot more mobile optimised!
+- Thank you Jaiden Collins for contributing to the fix.
 */

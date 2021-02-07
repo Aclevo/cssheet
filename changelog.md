@@ -2,7 +2,8 @@
 
 ## Finished Changes:
 Colours changed to Hsl(a) to allow for more shades.
-* Minor syntax changes
+
+Minor syntax changes
 
 ## Upcoming Changes:
 

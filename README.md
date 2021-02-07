@@ -1,4 +1,7 @@
 # CSSheet v1.2 [Alpha]
+
+## This is the development branch for CSSheet, please do not use this unless it is for testing purposes. This may lack stability.
+
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily! 
 
 CSSheet works by creating CSS classes and allowing you to insert them into any HTML tag
@@ -12,7 +15,7 @@ Includes: background color, background images, foreground color, border color, w
 ## How to add CSSheet to your web-page
 
 ```html
-<link rel="stylesheet" href="https://cobwebdev.github.io/cssheet/css/cssheet.css">
+<link rel="stylesheet" href="https://cobwebdev.github.io/cssheet/css/cssheet-dev.css">
 ```
 Add this tag to your web-page inside of your pages `<head>` tag.
 

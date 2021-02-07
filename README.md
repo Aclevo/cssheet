@@ -27,13 +27,15 @@ THIS IS THE DEVELOPMENT BRANCH FOR CSSHEET. STABILITY IS NOT GURAENTEED AND THIN
 
 Default CSSheet colors: Black, white, red, orange, yellow, aqua, blue, purple (You can always add more yourself)
 
-The background color syntax is: `bg-<color>`
+Brightness values: 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+The background color syntax is: `bg-<color>-<brightness>`
 
 Example:
 ```html
-<div class="bg-red">
+<div class="bg-red-5">
 ```
-This will create a divider with a red background
+This will create a divider with a red background and a brightness of 50% (default)
 
 ### Background images
 
@@ -183,11 +185,11 @@ This creates a divider and when the mouse hovers over it, the opacity will chang
 
 Default colors: black, white
 
-Backgrounds with opacity syntax: `op-bg-<color>`
+Backgrounds with opacity syntax: `bg-<color>-op`
 
 Example:
 ```html
-<div class="bg-op-black">
+<div class="bg-black-op">
 ```
 This creates a divider, which is transparent and black
 

@@ -1,0 +1,477 @@
+/* 
+CSSheet - v1.1.1 Alpha
+Made with love by Cob:web Development
+See GitHub readme for full documentation
+*/
+
+:root {
+    /* Colours */
+    --white: white;
+    --black: black;
+    --red: #ff4959;
+    --orange: #ff9541;
+    --yellow: #ffd652;
+    --aqua: #00c09a;
+    --blue: #3484ff;
+    --purple: #a868ff;
+    /* Feel free to add more colours for your page by downloading your own local copy and editing it */
+
+    /* Border Radius */
+    --none: 0px;
+    --rounded-box: 5px;
+    --curved-box: 12px;
+}
+
+/* Background colours */
+
+body {
+    font-family: Arial;
+}
+
+.bg-white {
+    background-color: var(--white)
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-aqua {
+    background-color: var(--aqua);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+/* Background images */
+
+.bgi-cloudy-peaks {
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/cloudy-peaks.jpeg) no-repeat center center fixed; 
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bgi-lovely-mountain {
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/lovely-mountain.jpeg) no-repeat center center fixed; 
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.bgi-midnight-city {
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/midnight-city.jpeg) no-repeat center center fixed; 
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bgi-night-sky {
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-sky.jpeg) no-repeat center center fixed; 
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bgi-night-town {
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-town.jpeg) no-repeat center center fixed; 
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bgi-sea-rock {
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/sea-rock.jpeg) no-repeat center center fixed; 
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Text colours / foreground colours */
+
+.fg-white {
+    color: var(--white)
+}
+
+.fg-black {
+    color: var(--black);
+}
+
+.fg-red {
+    color: var(--red);
+}
+
+.fg-orange {
+    color: var(--orange);
+}
+
+.fg-yellow {
+    color: var(--yellow);
+}
+
+.fg-aqua {
+    color: var(--aqua);
+}
+
+.fg-blue {
+    color: var(--blue);
+}
+
+.fg-purple {
+    color: var(--purple);
+}
+
+/* Border colours / foreground colours */
+
+.bdc-white {
+    border-color: var(--white)
+}
+
+.bdc-black {
+    border-color: var(--black);
+}
+
+.bdc-red {
+    border-color: var(--red);
+}
+
+.bdc-orange {
+    border-color: var(--orange);
+}
+
+.bdc-yellow {
+    border-color: var(--yellow);
+}
+
+.bdc-aqua {
+    border-color: var(--aqua);
+}
+
+.bdc-blue {
+    border-color: var(--blue);
+}
+
+.bdc-purple {
+    border-color: var(--purple);
+}
+
+/* Responsive Width (in percentages) */
+
+.wd-10 {
+    width: 10vw;
+}
+
+.wd-25 {
+    width: 25vw;
+}
+
+.wd-50 {
+    width: 50vw;
+}
+
+.wd-75 {
+    width: 75vw;
+}
+
+.wd-100 {
+    width: 100vw;
+}
+
+.wd-auto {
+    position: absolute;
+}
+
+/* Responsive Height (in percentages) */
+
+.ht-10 {
+    height: 10vh;
+}
+
+.ht-25 {
+    height: 25vh;
+}
+
+.ht-50 {
+    height: 50vh;
+}
+
+.ht-75 {
+    height: 75vh;
+}
+
+.ht-100 {
+    height: 100vh;
+}
+
+.ht-auto {
+    height: auto;
+}
+
+/* Border radius */
+
+.bdr-none {
+    border-radius: var(--none)
+}
+
+.bdr-rounded {
+    border-radius: var(--rounded-box);
+}
+
+.bdr-curved {
+    border-radius: var(--curved-box);
+}
+
+/* Border style */
+
+.bds-solid {
+    border-style: solid;
+}
+
+.bds-dotted {
+    border-style: dotted; 
+}
+
+.bds-dashed {
+    border-style: dashed;
+}
+
+/* Border width */
+
+.bdw-1 {
+    border-width: 1px;
+}
+
+.bdw-2 {
+    border-width: 2px;
+}
+
+.bdw-3 {
+    border-width: 3px;
+}
+
+.bdw-4 {
+    border-width: 4px;
+}
+
+.bdw-5 {
+    border-width: 5px;
+}
+
+.bdw-10 {
+    border-width: 10px;
+}
+
+
+/* Text align */
+.ta-left {
+    text-align: left;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+/* v1.1 alpha */
+
+/* Font Size (in vw. changed from rem to make it dynamically sized. if i've done something wrong please hit me in the head with a brick) */
+
+.fs-1 {
+    font-size: 1vw;
+}
+
+.fs-2 {
+    font-size: 2vw;
+}
+
+.fs-3 {
+    font-size: 3vw;
+}
+
+.fs-4 {
+    font-size: 4vw;
+}
+
+.fs-5 {
+    font-size: 5vw;
+}
+
+.fs-6 {
+    font-size: 6vw;
+}
+
+.fs-7 {
+    font-size: 7vw;
+}
+
+.fs-8 {
+    font-size: 8vw;
+}
+
+.fs-9 {
+    font-size: 9vw;
+}
+
+.fs-10 {
+    font-size: 10vw;
+}
+
+/* Opacity */
+
+.op-00 {
+    opacity: 0;
+}
+
+.op-01 {
+    opacity: 0.1;
+}
+
+.op-02 {
+    opacity: 0.2;
+}
+
+.op-03 {
+    opacity: 0.3;
+}
+
+.op-04 {
+    opacity: 0.4;
+}
+
+.op-05 {
+    opacity: 0.5;
+}
+
+.op-06 {
+    opacity: 0.6;
+}
+
+.op-07 {
+    opacity: 0.7;
+}
+
+.op-08 {
+    opacity: 0.8;
+}
+
+.op-09 {
+    opacity: 0.9;
+}
+
+.op-10 {
+    opacity: 1;
+}
+
+/* On hover, become slightly transparent */
+
+.oh-00:hover {
+    opacity: 0.0;
+    transition: 400ms;
+}
+
+.oh-01:hover {
+    opacity: 0.1;
+    transition: 400ms;
+}
+
+.oh-02:hover {
+    opacity: 0.2;
+    transition: 400ms;
+}
+
+.oh-03:hover {
+    opacity: 0.3;
+    transition: 400ms;
+}
+
+.oh-04:hover {
+    opacity: 0.4;
+    transition: 400ms;
+}
+
+.oh-05:hover {
+    opacity: 0.5;
+    transition: 400ms;
+}
+
+.oh-06:hover {
+    opacity: 0.6;
+    transition: 400ms;
+}
+
+.oh-07:hover {
+    opacity: 0.7;
+    transition: 400ms;
+}
+
+.oh-08:hover {
+    opacity: 0.8;
+    transition: 400ms;
+}
+
+.oh-09:hover {
+    opacity: 0.9;
+    transition: 400ms;
+}
+
+.oh-10:hover {
+    opacity: 10;
+    transition: 400ms;
+}
+
+/* RGBA background with opacity */
+.op-bg-black {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.op-bg-white {
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+/* Text decoration */
+
+.td-bold {
+    text-decoration: bold;
+}
+
+.td-underline {
+    text-decoration: underline;
+}
+
+.td-none {
+    text-decoration: none;
+}
+
+
+/* 
+Changelog: v1.1.1 Alpha
+We have fixed the font-size bug for mobile devices, meaning that websites made in CSSheet will be a lot more mobile optimised!
+- Thank you Jaiden Collins for contributing to the fix.
+*/

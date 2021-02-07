@@ -1,9 +1,10 @@
 # CSSheet v1.2 [Alpha]
 
 ## Finished Changes:
-[Coming soon]
+Colours changed to Hsl(a) to allow for more shades.
+* Minor syntax changes
+
 ## Upcoming Changes:
-Change the colours to hsl to allow for more shades.
 
 Word wrap
 

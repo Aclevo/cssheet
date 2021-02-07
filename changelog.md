@@ -4,5 +4,7 @@
 [Coming soon]
 ## Upcoming Changes:
 Change the colours to hsl to allow for more shades.
+
 Word wrap
+
 Font Choices

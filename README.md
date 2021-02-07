@@ -12,12 +12,14 @@ Documentation includes everything! Press CTRL+F to find specifics!
 
 Includes: background color, background images, foreground color, border color, width, height, border radius, border width, border style, text align, font size, opacity/transparency, opacity on hover, Background with opacity, text decoration
 
-## How to add CSSheet to your web-page
+## How to add CSSheet, test branch, to your web-page
 
 ```html
 <link rel="stylesheet" href="https://cobwebdev.github.io/cssheet/css/cssheet-dev.css">
 ```
 Add this tag to your web-page inside of your pages `<head>` tag.
+
+THIS IS THE DEVELOPMENT BRANCH FOR CSSHEET. STABILITY IS NOT GURAENTEED AND THINGS ARE SUBJECT TO CHANGE.
 
 ## CSSheet Syntax:
 

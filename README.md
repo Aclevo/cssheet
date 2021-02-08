@@ -1,7 +1,5 @@
 # CSSheet v1.2 [Alpha]
 
-## This is the development branch for CSSheet, please do not use this unless it is for testing purposes. This may lack stability.
-
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily! 
 
 CSSheet works by creating CSS classes and allowing you to insert them into any HTML tag
@@ -12,14 +10,12 @@ Documentation includes everything! Press CTRL+F to find specifics!
 
 Includes: fonts, background color, background images, foreground color, border color, width, height, border radius, border width, border style, text align, font size, opacity/transparency, opacity on hover, Background with opacity, text decoration, word wrap
 
-## How to add CSSheet, test branch, to your web-page
+## How to add CSSheet to your web page
 
 ```html
-<link rel="stylesheet" href="https://cobwebdev.github.io/cssheet/css/cssheet-dev.css">
+<link rel="stylesheet" href="https://cobwebdev.github.io/cssheet/css/cssheet.css">
 ```
 Add this tag to your web-page inside of your pages `<head>` tag.
-
-THIS IS THE DEVELOPMENT BRANCH FOR CSSHEET. STABILITY IS NOT GURAENTEED AND THINGS ARE SUBJECT TO CHANGE.
 
 ## CSSheet Syntax:
 

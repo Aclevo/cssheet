@@ -5,8 +5,9 @@ Colours changed to Hsl(a) to allow for more shades.
 
 Minor syntax changes
 
-## Upcoming Changes:
-
 Word wrap
 
 Font Choices
+
+## Upcoming Changes:
+[To be determined]

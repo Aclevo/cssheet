@@ -83,8 +83,16 @@ See GitHub readme for full documentation
 }
 
 /* Fonts */
-body {
-    font-family: Arial;
+.ft-arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ft-georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ft-courier {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -727,11 +735,28 @@ body {
     text-decoration: none;
 }
 
+/* Word Wrap */
+
+.wdw-normal {
+    word-wrap: normal;
+}
+
+.wdw-break-word {
+    word-wrap: break-word;
+}
+
+.wdw-initial {
+    word-wrap: initial;
+}
+
+.wdw-inherit {
+    word-wrap: inherit;
+}
 
 /* 
 Changelog: v1.2 [ALPHA]
 + Changed colours to HSL to allow for more shades in a simple way
 + Font choices
 + Word wrap
-* Moved opacity colours and 
+* Syntax changes
 */

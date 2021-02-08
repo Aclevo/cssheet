@@ -10,7 +10,7 @@ CSSheet works by creating CSS classes and allowing you to insert them into any H
 
 Documentation includes everything! Press CTRL+F to find specifics!
 
-Includes: background color, background images, foreground color, border color, width, height, border radius, border width, border style, text align, font size, opacity/transparency, opacity on hover, Background with opacity, text decoration
+Includes: fonts, background color, background images, foreground color, border color, width, height, border radius, border width, border style, text align, font size, opacity/transparency, opacity on hover, Background with opacity, text decoration, word wrap
 
 ## How to add CSSheet, test branch, to your web-page
 
@@ -22,6 +22,18 @@ Add this tag to your web-page inside of your pages `<head>` tag.
 THIS IS THE DEVELOPMENT BRANCH FOR CSSHEET. STABILITY IS NOT GURAENTEED AND THINGS ARE SUBJECT TO CHANGE.
 
 ## CSSheet Syntax:
+
+### Fonts:
+
+Default CSSheet fonts: arial, georgia, courier
+
+The font choice syntax is `ft-<font>`
+
+Example:
+```html
+<body class="ft-arial">
+```
+This will create a html body with the font "Arial"
 
 ### Background color:
 
@@ -157,7 +169,7 @@ Example:
 ```
 This creates a paragraph tag with a font size of 4vw
 
-### Opacity/Transparency
+### Opacity/Transparency:
 
 Opacity: 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 (00 = 0.0, 01 = 0.1)
 
@@ -169,7 +181,7 @@ Example:
 ```
 This creates a divider with an opacity/transparency of 0.5
 
-### Opacity on hover
+### Opacity on hover:
 
 Opacity on hover: 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 (00 = 0.0, 01 = 0.1)
 
@@ -181,7 +193,7 @@ Example:
 ```
 This creates a divider and when the mouse hovers over it, the opacity will change to 0.5
 
-### Backgrounds with opacity
+### Backgrounds with opacity:
 
 Default colors: black, white
 
@@ -193,7 +205,7 @@ Example:
 ```
 This creates a divider, which is transparent and black
 
-### Text decoration
+### Text decoration:
 
 Text decorations: bold, underline, none
 
@@ -204,6 +216,18 @@ Example:
 <a href="https://cob-web.dev/discord" class="td-underline">
 ```
 This creates a hyperlink, with the text decoration underline.
+
+### Word Wrap:
+
+Wrap styles: normal, break-word, initial, inherit
+
+Word wrap syntax: `wdw-<style>`
+
+Example:
+```html
+<p class="wdw-break-word">
+```
+This will create a paragraph tag with the word wrap "break word".
 
 ## Made with love by Cob:web Development and our Open source contributors:
 

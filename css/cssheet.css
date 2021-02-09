@@ -32,14 +32,14 @@ See GitHub readme for full documentation
     --orange-9: hsla(35, 100%, 90%, 1);
 
     --yellow-1: hsla(45, 100%, 10%, 1);
-    --yellow-1: hsla(45, 100%, 20%, 1);
-    --yellow-1: hsla(45, 100%, 30%, 1);
-    --yellow-1: hsla(45, 100%, 40%, 1);
-    --yellow-1: hsla(45, 100%, 50%, 1);
-    --yellow-1: hsla(45, 100%, 60%, 1);
-    --yellow-1: hsla(45, 100%, 70%, 1);
-    --yellow-1: hsla(45, 100%, 80%, 1);
-    --yellow-1: hsla(45, 100%, 90%, 1);
+    --yellow-2: hsla(45, 100%, 20%, 1);
+    --yellow-3: hsla(45, 100%, 30%, 1);
+    --yellow-4: hsla(45, 100%, 40%, 1);
+    --yellow-5: hsla(45, 100%, 50%, 1);
+    --yellow-6: hsla(45, 100%, 60%, 1);
+    --yellow-7: hsla(45, 100%, 70%, 1);
+    --yellow-8: hsla(45, 100%, 80%, 1);
+    --yellow-9: hsla(45, 100%, 90%, 1);
 
     --aqua-1: hsla(168, 100%, 10%, 1);
     --aqua-2: hsla(168, 100%, 20%, 1);

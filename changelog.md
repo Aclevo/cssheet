@@ -1,9 +1,9 @@
-# CSSheet v1.2 [Alpha]
+# CSSheet v1.3 [Alpha]
 
-Colours changed to Hsl(a) to allow for more shades.
+Added float
 
-Minor syntax changes
+Added padding
 
-Word wrap
+Added layout collumns so that you are able to split content along the page.
 
-Font Choices
+Made layout collumns, and CSSheet as a whole, more moble friendly.

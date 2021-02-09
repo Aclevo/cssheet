@@ -15,7 +15,7 @@ Includes: fonts, background color, background images, foreground color, border c
 ## How to add CSSheet, test branch, to your web-page
 
 ```html
-<link rel="stylesheet" href="https://gitcdn.xyz/repo/cobwebdev/cssheet/dev/css/cssheet.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/cdn/cobwebdev/cssheet/dev/css/cssheet.css">
 ```
 Add this tag to your web-page inside of your pages `<head>` tag.
 

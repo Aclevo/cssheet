@@ -10,7 +10,7 @@ CSSheet works by creating CSS classes and allowing you to insert them into any H
 
 Documentation includes everything! Press CTRL+F to find specifics!
 
-Includes: fonts, background color, background images, foreground color, border color, width, height, border radius, border width, border style, text align, font size, opacity/transparency, opacity on hover, Background with opacity, text decoration, word wrap
+Includes: fonts, background color, background images, foreground color, border color, width, height, border radius, border width, border style, text align, font size, opacity/transparency, opacity on hover, Background with opacity, text decoration, word wrap, float, padding, collumns and rows,
 
 ## How to add CSSheet, test branch, to your web-page
 
@@ -277,6 +277,8 @@ Collumns need a width in order to display the full length of a collumn
 </div>
 ```
 This creates a row, and 3 collumns with a maximum width of 25vw. Inside of the collumns are headers.
+
+* Collumns and rows are mobile responsive
 
 ## Made with love by Cob:web Development and our Open source contributors:
 

@@ -13,7 +13,7 @@ Includes: fonts, background color, background images, foreground color, border c
 ## How to add CSSheet to your web page
 
 ```html
-<link rel="stylesheet" href="http://gitcdn.xyz/repo/cobwebdev/cssheet/main/css/cssheet.css">
+<link rel="stylesheet" href="https://cobwebdev.github.io/cssheet/css/cssheet.css">
 ```
 Add this tag to your web-page inside of your pages `<head>` tag.
 

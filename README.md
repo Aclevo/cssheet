@@ -1,4 +1,4 @@
-# CSSheet v1.2 [Alpha]
+# CSSheet v1.3 [Alpha]
 
 ## This is the development branch for CSSheet, please do not use this unless it is for testing purposes. This may lack stability.
 
@@ -228,6 +228,55 @@ Example:
 <p class="wdw-break-word">
 ```
 This will create a paragraph tag with the word wrap "break word".
+
+### Padding: 
+
+Padding (in vw and vh): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+
+Padding syntax: `pd-<padding>`
+
+Example:
+```html
+<p class="pd-8">
+```
+This will create a padded paragraph tag with padding of 8vh and 8vw
+
+### Floating:
+
+Float values: left, right, none, inherit
+
+Float syntax: `flt-<value>`
+
+Example:
+```html
+<div class="ft-left">
+```
+This will create a divider that will float to the left
+
+### Collumns and Rows
+
+This is a bit more complicated to implement, Collumns on web-pages usually split content across the webpage, so you can have multiple buttons on the same line, for example. 
+
+To create a collumn you first need to add a row. The syntax for a row is: `row`
+```html
+<div class="row">
+```
+
+Afterwards you will need to add as many collumns into your row as you see fit.
+
+The syntax for a collumn is: `cl wd-<width>`
+
+Collumns need a width in order to display the full length of a collumn
+
+#### Full row and collumn example:
+```html
+<div class="row">
+  <div class="cl wd-25><h1>Collumn 1</h1></div>
+  <div class="cl wd-25><h1>Collumn 2</h1></div>
+  <div class="cl wd-25><h1>Collumn 3</h1></div>
+</div>
+```
+This creates a row, and 3 collumns with a maximum width of 25vw. Inside of the collumns are headers.
 
 ## Made with love by Cob:web Development and our Open source contributors:
 

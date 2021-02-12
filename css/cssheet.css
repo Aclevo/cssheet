@@ -834,6 +834,7 @@ See GitHub readme for full documentation
 }
 
 /* Create columns that float next to each other */
+
 .cl {
   float: left;
 }
@@ -853,10 +854,104 @@ See GitHub readme for full documentation
   }
 }
 
+/* Margins */
+
+.mg-0 {
+  margin: 0vw 0vh
+}
+
+.mg-1 {
+  margin: 1vw 1vh
+}
+
+.mg-2 {
+  margin: 2vw 2vh
+}
+
+.mg-3 {
+  margin: 3vw 3vh
+}
+
+.mg-4 {
+  margin: 4vw 4vh
+}
+
+.mg-5 {
+  margin: 5vw 5vh
+}
+
+.mg-6 {
+  margin: 6vw 6vh
+}
+
+.mg-7 {
+  margin: 7vw 7vh
+}
+
+.mg-8 {
+  margin: 8vw 8vh
+}
+
+.mg-9 {
+  margin: 9vw 9vh
+}
+
+.mg-10 {
+  margin: 10vw 10vh
+}
+
+.mg-11 {
+  margin: 11vw 11vh
+}
+
+.mg-12 {
+  margin: 12vw 12vh
+}
+
+.mg-13 {
+  margin: 13vw 13vh
+}
+
+.mg-14 {
+  margin: 14vw 14vh
+}
+
+.mg-15 {
+  margin: 15vw 15vh
+}
+
+.mg-16 {
+  margin: 16vw 16vh
+}
+
+/* Position properties */
+
+.pos-static {
+  position: static;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
 /*
 Changelog: v1.3 [ALPHA]
 + Float (Syntax: flt-<float>)
 + Padding (Syntax: pd-<padding>)
 + Allows for layout collums so that you can split content along the page, mobile friendly. (Syntax: "row" and "cl")
++ Margins (Syntax: mg-<margin>)
++ Positions (Syntax: pos-<position>)
 * More mobile responsiveness
 */

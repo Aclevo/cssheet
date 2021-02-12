@@ -253,7 +253,7 @@ Example:
 ```
 This will create a divider that will float to the left
 
-### Columns and Rows
+### Columns and Rows:
 
 This is a bit more complicated to implement, Columns on web-pages usually split content across the webpage, so you can have multiple buttons on the same line, for example. 
 
@@ -279,6 +279,30 @@ Collumns need a width in order to display the full length of a collumn
 This creates a row, and 3 collumns with a maximum width of 25vw. Inside of the collumns are headers.
 
 * Collumns and rows are mobile responsive
+
+### Margins:
+
+Margin values: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+
+The syntax for margins are: `mg-<value>`
+
+Example:
+```html
+<div class="mg-0">
+```
+This creates a divider with a margin of 0vw and 0vh (nothing)
+
+### Position:
+
+Position properties: static, relative, fixed, absolute, sticky
+
+The syntax for position is: `pos-<position>`
+
+Example:
+```html
+<div class="pos-relative">
+```
+This creates a divider with a relative position.
 
 ## Made with love by Cob:web Development and our Open source contributors:
 

@@ -1,5 +1,5 @@
-/* 
-CSSheet - v1.2 Alpha
+/*
+CSSheet - v1.3 Alpha
 Made with love by Cob:web Development
 See GitHub readme for full documentation
 */
@@ -10,7 +10,7 @@ See GitHub readme for full documentation
     --white: white;
     --black: black;
 
-    /* HSL colours */ 
+    /* HSL colours */
     --red-1: hsla(360, 100%, 10%, 1);
     --red-2: hsla(360, 100%, 20%, 1);
     --red-3: hsla(360, 100%, 30%, 1);
@@ -70,7 +70,6 @@ See GitHub readme for full documentation
     --purple-7: hsla(275, 100%, 70%, 1);
     --purple-8: hsla(275, 100%, 80%, 1);
     --purple-9: hsla(275, 100%, 90%, 1);
-    /* Feel free to add more colours for your page by downloading your own local copy and editing it */
 
     /* Opacity colours*/
     --black-op: rgba(0, 0, 0, 0.5);
@@ -105,7 +104,6 @@ See GitHub readme for full documentation
 .bg-black {
     background-color: var(--black);
 }
-
 
 /* HSL colours */
 
@@ -338,7 +336,7 @@ See GitHub readme for full documentation
 /* Background images */
 
 .bgi-cloudy-peaks {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/cloudy-peaks.jpeg) no-repeat center center fixed; 
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/cloudy-peaks.jpeg) no-repeat center center fixed;
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,7 +344,7 @@ See GitHub readme for full documentation
 }
 
 .bgi-lovely-mountain {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/lovely-mountain.jpeg) no-repeat center center fixed; 
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/lovely-mountain.jpeg) no-repeat center center fixed;
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -355,7 +353,7 @@ See GitHub readme for full documentation
 
 
 .bgi-midnight-city {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/midnight-city.jpeg) no-repeat center center fixed; 
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/midnight-city.jpeg) no-repeat center center fixed;
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -363,7 +361,7 @@ See GitHub readme for full documentation
 }
 
 .bgi-night-sky {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-sky.jpeg) no-repeat center center fixed; 
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-sky.jpeg) no-repeat center center fixed;
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -371,7 +369,7 @@ See GitHub readme for full documentation
 }
 
 .bgi-night-town {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-town.jpeg) no-repeat center center fixed; 
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-town.jpeg) no-repeat center center fixed;
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -379,7 +377,7 @@ See GitHub readme for full documentation
 }
 
 .bgi-sea-rock {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/sea-rock.jpeg) no-repeat center center fixed; 
+    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/sea-rock.jpeg) no-repeat center center fixed;
     background-position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -527,7 +525,7 @@ See GitHub readme for full documentation
 }
 
 .bds-dotted {
-    border-style: dotted; 
+    border-style: dotted;
 }
 
 .bds-dashed {
@@ -573,8 +571,6 @@ See GitHub readme for full documentation
 .ta-right {
     text-align: right;
 }
-
-/* v1.1 alpha */
 
 /* Font Size (in vw. changed from rem to make it dynamically sized. if i've done something wrong please hit me in the head with a brick) */
 
@@ -753,10 +749,209 @@ See GitHub readme for full documentation
     word-wrap: inherit;
 }
 
-/* 
-Changelog: v1.2 [ALPHA]
-+ Changed colours to HSL to allow for more shades in a simple way
-+ Font choices
-+ Word wrap
-* Syntax changes
+/* Padding */
+
+.pd-1 {
+  padding: 1vw 1vh;
+}
+
+.pd-2 {
+  padding: 2vw 2vh;
+}
+
+.pd-3 {
+  padding: 3vw 3vh;
+}
+
+.pd-4 {
+  padding: 4vw 4vh;
+}
+
+.pd-5 {
+  padding: 5vw 5vh;
+}
+
+.pd-6 {
+  padding: 6vw 6vh;
+}
+
+.pd-7 {
+  padding: 7vw 7vh;
+}
+
+.pd-8 {
+  padding: 8vw 8vh;
+}
+
+.pd-9 {
+  padding: 9vw 9vh;
+}
+
+.pd-10 {
+  padding: 10vw 10vh;
+}
+
+.pd-11 {
+  padding: 11vw 11vh;
+}
+
+.pd-12 {
+  padding: 12vw 12vh;
+}
+
+.pd-13 {
+  padding: 13vw 13vh;
+}
+
+.pd-14 {
+  padding: 14vw 14vh;
+}
+
+.pd-15 {
+  padding: 15vw 15vh;
+}
+
+.pd-16 {
+  padding: 16vw 16vh;
+}
+
+/* Float */
+
+.flt-left {
+  float: left;
+}
+
+.flt-right {
+  float: right;
+}
+
+.flt-none {
+  float: none;
+}
+
+.flt-inherit {
+  float: inherit;
+}
+
+/* Create columns that float next to each other */
+
+.cl {
+  float: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .cl {
+    width: 100%;
+    padding: 4px 4px;
+  }
+}
+
+/* Margins */
+
+.mg-0 {
+  margin: 0vw 0vh
+}
+
+.mg-1 {
+  margin: 1vw 1vh
+}
+
+.mg-2 {
+  margin: 2vw 2vh
+}
+
+.mg-3 {
+  margin: 3vw 3vh
+}
+
+.mg-4 {
+  margin: 4vw 4vh
+}
+
+.mg-5 {
+  margin: 5vw 5vh
+}
+
+.mg-6 {
+  margin: 6vw 6vh
+}
+
+.mg-7 {
+  margin: 7vw 7vh
+}
+
+.mg-8 {
+  margin: 8vw 8vh
+}
+
+.mg-9 {
+  margin: 9vw 9vh
+}
+
+.mg-10 {
+  margin: 10vw 10vh
+}
+
+.mg-11 {
+  margin: 11vw 11vh
+}
+
+.mg-12 {
+  margin: 12vw 12vh
+}
+
+.mg-13 {
+  margin: 13vw 13vh
+}
+
+.mg-14 {
+  margin: 14vw 14vh
+}
+
+.mg-15 {
+  margin: 15vw 15vh
+}
+
+.mg-16 {
+  margin: 16vw 16vh
+}
+
+/* Position properties */
+
+.pos-static {
+  position: static;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
+/*
+Changelog: v1.3 [ALPHA]
++ Float (Syntax: flt-<float>)
++ Padding (Syntax: pd-<padding>)
++ Allows for layout collums so that you can split content along the page, mobile friendly. (Syntax: "row" and "cl")
++ Margins (Syntax: mg-<margin>)
++ Positions (Syntax: pos-<position>)
+* More mobile responsiveness
 */

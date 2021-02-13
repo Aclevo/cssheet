@@ -1,4 +1,4 @@
-# CSSheet v1.2.1 [Alpha]
+# CSSheet v1.3 [Alpha]
 
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily! 
 
@@ -8,7 +8,7 @@ CSSheet works by creating CSS classes and allowing you to insert them into any H
 
 Documentation includes everything! Press CTRL+F to find specifics!
 
-Includes: fonts, background color, background images, foreground color, border color, width, height, border radius, border width, border style, text align, font size, opacity/transparency, opacity on hover, Background with opacity, text decoration, word wrap
+Includes: fonts, background color, background images, foreground color, border color, width, height, border radius, border width, border style, text align, font size, opacity/transparency, opacity on hover, Background with opacity, text decoration, word wrap, float, padding, columns and rows,
 
 ## How to add CSSheet to your web page
 
@@ -225,6 +225,81 @@ Example:
 ```
 This will create a paragraph tag with the word wrap "break word".
 
+### Padding: 
+
+Padding (in vw and vh): 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+
+Padding syntax: `pd-<padding>`
+
+Example:
+```html
+<p class="pd-8">
+```
+This will create a padded paragraph tag with padding of 8vh and 8vw
+
+### Floating:
+
+Float values: left, right, none, inherit
+
+Float syntax: `flt-<value>`
+
+Example:
+```html
+<div class="ft-left">
+```
+This will create a divider that will float to the left
+
+### Columns and Rows:
+
+This is a bit more complicated to implement, Columns on web-pages usually split content across the webpage, so you can have multiple buttons on the same line, for example. 
+
+To create a column you first need to add a row. The syntax for a row is: `row`
+```html
+<div class="row">
+```
+
+Afterwards you will need to add as many collumns into your row as you see fit.
+
+The syntax for a collumn is: `cl wd-<width>`
+
+Collumns need a width in order to display the full length of a collumn
+
+#### Full row and column example:
+```html
+<div class="row">
+  <div class="cl wd-25><h1>Collumn 1</h1></div>
+  <div class="cl wd-25><h1>Collumn 2</h1></div>
+  <div class="cl wd-25><h1>Collumn 3</h1></div>
+</div>
+```
+This creates a row, and 3 collumns with a maximum width of 25vw. Inside of the collumns are headers.
+
+* Collumns and rows are mobile responsive
+
+### Margins:
+
+Margin values: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
+
+The syntax for margins are: `mg-<value>`
+
+Example:
+```html
+<div class="mg-0">
+```
+This creates a divider with a margin of 0vw and 0vh (nothing)
+
+### Position:
+
+Position properties: static, relative, fixed, absolute, sticky
+
+The syntax for position is: `pos-<position>`
+
+Example:
+```html
+<div class="pos-relative">
+```
+This creates a divider with a relative position.
+
 ## Made with love by Cob:web Development and our Open source contributors:
 
 Adam Salt - Lead Developer
@@ -232,3 +307,5 @@ Adam Salt - Lead Developer
 Jaiden Collins - Developer
 
 ### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.dev/discord
+
+* Please be aware that our CDN automatically updates, however it may take up to 2 hours for the cache to clear on the CDN.

@@ -306,6 +306,6 @@ Adam Salt - Lead Developer
 
 Jaiden Collins - Developer
 
-### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.dev/discord
+### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.xyz/discord
 
 * Please be aware that our CDN automatically updates, however it may take up to 2 hours for the cache to clear on the CDN.

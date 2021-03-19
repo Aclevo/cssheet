@@ -946,6 +946,273 @@ See GitHub readme for full documentation
   position: sticky;
 }
 
+/* ----------------------------- */
+
+/* Buttons Default */
+
+.btn-git{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    background-color: rgb(31, 30, 30);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-git:hover{
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn-success{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #58d158;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-success:hover{
+    border-radius: 7px;
+    background-color: rgb(56, 173, 62)
+}
+
+.btn-restart{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #f8f859;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-restart:hover{
+    border-radius: 7px;
+    background-color: rgb(204, 204, 53);
+}
+
+.btn-error{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 76, 76);
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-error:hover{
+    border-radius: 7px;
+    background-color: rgb(204, 53, 53);
+}
+
+/* ----------------------------- */
+
+/* --- Buttons Bordered --- */
+
+.btn-git-border{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    padding: 10px 40px;
+    border: 3px solid rgb(31, 30, 30);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-git-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
+
+.btn-success-border{
+    text-decoration: none;
+    color: #58d158;
+    border: 3px solid #58d158;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-success-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: #58d158;
+}
+
+.btn-restart-border{
+    text-decoration: none;
+    color: #f8f859;
+    border: 3px solid #f8f859;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-restart-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: #f8f859;
+}
+
+.btn-error-border{
+    text-decoration: none;
+    color: rgb(238, 76, 76);
+    border: 3px solid rgb(238, 76, 76);
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-error-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(238, 76, 76);
+}
+
+/* ----------------------------- */
+
+/* Other Stuff */
+
+.non-select{
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.fade{
+    animation: fade infinite 1s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.fade2{
+    animation: fade infinite 2s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.fade3{
+    animation: fade infinite 3s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.fade4{
+    animation: fade infinite 4s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.fade5{
+    animation: fade infinite 5s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.outline-black{
+    -webkit-text-stroke: 1px black;
+}
+
+.outline-red{
+    -webkit-text-stroke: 1px rgb(255, 0, 0);
+}
+
+.outline-green{
+    -webkit-text-stroke: 1px rgb(0, 255, 64);
+}
+
+.outline-white{
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.outline-blue{
+    -webkit-text-stroke: 1px rgb(2, 81, 253);
+}
+
+.outline-rainbow{
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow{
+    0%{
+        -webkit-text-stroke: 1px black
+    }
+    15%{
+        -webkit-text-stroke: 1px Red;
+    }
+    25%{
+        -webkit-text-stroke: 1px Orange;
+    }
+    50%{
+        -webkit-text-stroke: 1px Yellow;
+    }
+    65%{
+        -webkit-text-stroke: 1px Green;
+    }
+    75%{
+        -webkit-text-stroke: 1px Blue;
+    }
+    85%{
+        -webkit-text-stroke: 1px Indigo;
+    }
+    100%{
+        -webkit-text-stroke: 1px Violet;
+    }
+}
+
+.rainbow{
+    animation: rainbowText 5s infinite;
+}
+
+@keyframes rainbowText{
+    0%{
+        color: black
+    }
+    15%{
+        color: Red;
+    }
+    25%{
+        color: Orange;
+    }
+    50%{
+        color: Yellow;
+    }
+    65%{
+        color: Green;
+    }
+    75%{
+        color: Blue;
+    }
+    85%{
+        color: Indigo;
+    }
+    100%{
+        color: Violet;
+    }
+}
+
+
+
 /*
 Changelog: v1.3 [ALPHA]
 + Float (Syntax: flt-<float>)

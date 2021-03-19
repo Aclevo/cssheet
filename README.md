@@ -302,9 +302,9 @@ This creates a divider with a relative position.
 
 ## Made with love by Cob:web Development and our Open source contributors:
 
-Adam Salt - Lead Developer
+Alex Carson - Lead Developer
 
-Jaiden Collins - Developer
+Adam Salt - Former Lead Developer
 
 ### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.xyz/discord
 

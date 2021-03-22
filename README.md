@@ -1,4 +1,4 @@
-# CSSheet v2.0 [Beta]
+# CSSheet v1.4 [Alpha]
 
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily! 
 

@@ -313,6 +313,18 @@ Example:
 <a href="btn"><div class="loader"></div></a>
 ```
 
+## Theams:
+There are now a new theme feature where you can add a theme! `Syntax: thm-<theme_name>`
+Theres currently only 1 named and that is `thm-discord-<mode>` and modes are `dark and light`
+
+Example:
+```html
+<body class="thm-discord-dark">
+<!-- Your code here -->
+</body>
+```
+
+Edit `Discord theme example file` for more details.
 ## Made with love by Cob:web Development and our Open source contributors:
 
 Alex Carson - Lead Developer
@@ -323,5 +335,3 @@ Adam Salt - Former Lead Developer
 
 * Please be aware that our CDN automatically updates, however it may take up to 2 hours for the cache to clear on the CDN.
 
-
-<iframe src="https://cob-web.xyz/"> </iframe>

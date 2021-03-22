@@ -1,4 +1,4 @@
-# CSSheet v1.3 [Alpha]
+# CSSheet v2.0 [Beta]
 
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily! 
 
@@ -300,12 +300,28 @@ Example:
 ```
 This creates a divider with a relative position.
 
+
+## Loader:
+
+Add loader to your own website.
+How does it works?
+Well, you need to create a button or any other `html element` 
+Then in that element add 1 div and give it a class named `loader`
+
+Example:
+```html
+<a href="btn"><div class="loader"></div></a>
+```
+
 ## Made with love by Cob:web Development and our Open source contributors:
 
-Adam Salt - Lead Developer
+Alex Carson - Lead Developer
 
-Jaiden Collins - Developer
+Adam Salt - Former Lead Developer
 
 ### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.xyz/discord
 
 * Please be aware that our CDN automatically updates, however it may take up to 2 hours for the cache to clear on the CDN.
+
+
+<iframe src="https://cob-web.xyz/"> </iframe>

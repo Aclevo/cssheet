@@ -302,20 +302,15 @@ This creates a divider with a relative position.
 
 
 ## Loader:
-
 Add loader to your own website.
-How does it works?
-Well, you need to create a button or any other `html element` 
-Then in that element add 1 div and give it a class named `loader`
 
 Example:
 ```html
 <a href="btn"><div class="loader"></div></a>
 ```
 
-## Theams:
-There are now a new theme feature where you can add a theme! `Syntax: thm-<theme_name>`
-Theres currently only 1 named and that is `thm-discord-<mode>` and modes are `dark and light`
+## Themes:
+Theres currently only 1 theme to use the theme the class for it is `thm-discord-<mode>` and modes are `dark and light`
 
 Example:
 ```html

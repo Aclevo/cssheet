@@ -1,4 +1,4 @@
-# CSSheet v1.3 [Alpha]
+# CSSheet v1.4 [Alpha]
 
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily! 
 
@@ -300,6 +300,26 @@ Example:
 ```
 This creates a divider with a relative position.
 
+
+## Loader:
+Add loader to your own website.
+
+Example:
+```html
+<a href="btn"><div class="loader"></div></a>
+```
+
+## Themes:
+Theres currently only 1 theme to use the theme the class for it is `thm-discord-<mode>` and modes are `dark and light`
+
+Example:
+```html
+<body class="thm-discord-dark">
+<!-- Your code here -->
+</body>
+```
+
+Edit `Discord theme example file` for more details.
 ## Made with love by Cob:web Development and our Open source contributors:
 
 Alex Carson - Lead Developer
@@ -309,3 +329,4 @@ Adam Salt - Former Lead Developer
 ### Please join the Cob:web Development discord to talk to us and contribute to our projects: https://cob-web.xyz/discord
 
 * Please be aware that our CDN automatically updates, however it may take up to 2 hours for the cache to clear on the CDN.
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssheet.css">
+    <title>Discord Theme Example</title>
+</head>
+<body class="thm-discord-dark ta-center" style="transition: .4s; padding: 0; margin: 0;">
+
+    <nav class="thm-discord-nav-enabled" style="height: 100px;">
+        <h1 class="ta-center fs-3 ft-sans" style="margin: 0; position: relative; top: 20px">Discord Theme Example</h1>
+    </nav>
+    <br>
+
+
+    <br><br><br><br><br><br>
+    <h1 class="fs-3 ft-arial">Thanks for using CSSheet!</h1>
+    <a href="https://discord.gg/GpbyJx3CXb" class="btn-disc non-select">Our Server</a>
+    <a href="https://github.com/cobwebdev/cssheet" class="btn-disc non-select">GitHub</a>
+    <a style="cursor: pointer;" onclick="change()" class="btn-disc non-select">Change Theme</a>
+    <p class="ft-courier" style="position:relative; top: 250px;">Made with ♥ by <a href="https://cob-web.xyz/" style="color: rgb(111, 111, 212);">Cob:Web Developement</a></p>
+</body>
+<script>
+    function change(){
+        const body = document.body
+        if (body.className == "thm-discord-dark ta-center"){
+            body.className = "thm-discord-light ta-center"
+        } else {
+            body.className = "thm-discord-dark ta-center"
+        }
+    }
+    
+</script>
+</html>

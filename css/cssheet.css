@@ -1,16 +1,29 @@
 /*
-CSSheet - v1.3 Alpha
-Made with love by Cob:web Development
-See GitHub readme for full documentation
+
+             CSSheet - v1.4 Alpha
+      Made with love by Cob:web Development
+  🏦 See GitHub readme for full documentation 🏦
+
+
 */
 
+/* --------- 📦 Storing some variables 📦 --------- */
+
 :root {
-    /* Colours */
+    /* --------- 🍏 Colors 🍏 --------- */
 
     --white: white;
     --black: black;
+    --discord-dark: #23272a;
+    --discord-light: #2c2f33;
+    --discord-whitegrey: #99aab5;
+    --discord-white: #ffffff;
+    --discord-main: #7289da;
 
-    /* HSL colours */
+    /* ---------------------------------- */
+
+    /* --------- 🍒 HSL colours 🍒 --------- */
+
     --red-1: hsla(360, 100%, 10%, 1);
     --red-2: hsla(360, 100%, 20%, 1);
     --red-3: hsla(360, 100%, 30%, 1);
@@ -71,17 +84,35 @@ See GitHub readme for full documentation
     --purple-8: hsla(275, 100%, 80%, 1);
     --purple-9: hsla(275, 100%, 90%, 1);
 
-    /* Opacity colours*/
+    --red-50: var(--red-5);
+    --orange-50: var(--orange-5);
+    --yellow-50: var(--yellow-5);
+    --aqua-50: var(--aqua-5);
+
+    /* ---------------------------------- */
+
+    /* --------- 💥 Opacity Colors 💥 --------- */
+
     --black-op: rgba(0, 0, 0, 0.5);
     --white-op: rgba(255, 255, 255, 0.5);
 
-    /* Border Radius */
+    /* ---------------------------------- */
+
+    /* --------- ⭕ Border Radius ⭕ --------- */
+
     --none: 0px;
     --rounded-box: 5px;
     --curved-box: 12px;
+
+    /* ---------------------------------- */
 }
 
-/* Fonts */
+/* ---------------------------------- */
+
+/* --------- 🎁 Storing some variables 🎁 --------- */
+
+         /* --------- ✍ Fonts ✍ --------- */
+
 .ft-arial {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -94,8 +125,22 @@ See GitHub readme for full documentation
     font-family: 'Courier New', Courier, monospace;
 }
 
+.ft-sans {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-/* Background colours */
+.ft-verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ft-serif{
+    font-family: serif;
+}
+
+        /* ---------------------------------- */
+
+
+     /* --------- 🌆 Background colours 🌆 --------- */
 
 .bg-white {
     background-color: var(--white)
@@ -104,226 +149,231 @@ See GitHub readme for full documentation
 .bg-black {
     background-color: var(--black);
 }
+     
+     /* ---------------------------------- */
 
-/* HSL colours */
+    
+    /* --------- 🔏 HSL colours 🔏 --------- */
 
-.bg-red-1 {
+.bg-red1 {
     background-color: var(--red-1);
 }
 
-.bg-red-2 {
+.bg-red2 {
     background-color: var(--red-2);
 }
 
-.bg-red-3 {
+.bg-red3 {
     background-color: var(--red-3);
 }
 
-.bg-red-4 {
+.bg-red4 {
     background-color: var(--red-4);
 }
 
-.bg-red-5 {
+.bg-red5 {
     background-color: var(--red-5);
 }
 
-.bg-red-6 {
+.bg-red6 {
     background-color: var(--red-6);
 }
 
-.bg-red-7 {
+.bg-red7 {
     background-color: var(--red-7);
 }
 
-.bg-red-8 {
+.bg-red8 {
     background-color: var(--red-8);
 }
 
-.bg-red-9 {
+.bg-red9 {
     background-color: var(--red-9);
 }
 
-.bg-orange-1 {
+.bg-orange1 {
     background-color: var(--orange-1);
 }
 
-.bg-orange-2 {
+.bg-orange2 {
     background-color: var(--orange-2);
 }
 
-.bg-orange-3 {
+.bg-orange3 {
     background-color: var(--orange-3);
 }
 
-.bg-orange-4 {
+.bg-orange4 {
     background-color: var(--orange-4);
 }
 
-.bg-orange-5 {
+.bg-orange5 {
     background-color: var(--orange-5);
 }
 
-.bg-orange-6 {
+.bg-orange6 {
     background-color: var(--orange-6);
 }
 
-.bg-orange-7 {
+.bg-orange7 {
     background-color: var(--orange-7);
 }
 
-.bg-orange-8 {
+.bg-orange8 {
     background-color: var(--orange-8);
 }
 
-.bg-orange-9 {
+.bg-orange9 {
     background-color: var(--orange-9);
 }
 
-.bg-yellow-1 {
+.bg-yellow1 {
     background-color: var(--yellow-1);
 }
 
-.bg-yellow-2 {
+.bg-yellow2 {
     background-color: var(--yellow-2);
 }
 
-.bg-yellow-3 {
+.bg-yellow3 {
     background-color: var(--yellow-3);
 }
 
-.bg-yellow-4 {
+.bg-yellow4 {
     background-color: var(--yellow-4);
 }
 
-.bg-yellow-5 {
+.bg-yellow5 {
     background-color: var(--yellow-5);
 }
 
-.bg-yellow-6 {
+.bg-yellow6 {
     background-color: var(--yellow-6);
 }
 
-.bg-yellow-7 {
+.bg-yellow7 {
     background-color: var(--yellow-7);
 }
 
-.bg-yellow-8 {
+.bg-yellow8 {
     background-color: var(--yellow-8);
 }
 
-.bg-yellow-9 {
+.bg-yellow9 {
     background-color: var(--yellow-9);
 }
 
-.bg-aqua-1 {
+.bg-aqua1 {
     background-color: var(--aqua-1);
 }
 
-.bg-aqua-2 {
+.bg-aqua2 {
     background-color: var(--aqua-2);
 }
 
-.bg-aqua-3 {
+.bg-aqua3 {
     background-color: var(--aqua-3);
 }
 
-.bg-aqua-4 {
+.bg-aqua4 {
     background-color: var(--aqua-4);
 }
 
-.bg-aqua-5 {
+.bg-aqua5 {
     background-color: var(--aqua-5);
 }
 
-.bg-aqua-6 {
+.bg-aqua6 {
     background-color: var(--aqua-6);
 }
 
-.bg-aqua-7 {
+.bg-aqua7 {
     background-color: var(--aqua-7);
 }
 
-.bg-aqua-8 {
+.bg-aqua8 {
     background-color: var(--aqua-8);
 }
 
-.bg-aqua-9 {
+.bg-aqua9 {
     background-color: var(--aqua-9);
 }
 
-.bg-blue-1 {
+.bg-blue1 {
     background-color: var(--blue-1);
 }
 
-.bg-blue-2 {
+.bg-blue2 {
     background-color: var(--blue-2);
 }
 
-.bg-blue-3 {
+.bg-blue3 {
     background-color: var(--blue-3);
 }
 
-.bg-blue-4 {
+.bg-blue4 {
     background-color: var(--blue-4);
 }
 
-.bg-blue-5 {
+.bg-blue5 {
     background-color: var(--blue-5);
 }
 
-.bg-blue-6 {
+.bg-blue6 {
     background-color: var(--blue-6);
 }
 
-.bg-blue-7 {
+.bg-blue7 {
     background-color: var(--blue-7);
 }
 
-.bg-blue-8 {
+.bg-blue8 {
     background-color: var(--blue-8);
 }
 
-.bg-blue-9 {
+.bg-blue9 {
     background-color: var(--blue-9);
 }
 
-.bg-purple-1 {
+.bg-purple1 {
     background-color: var(--purple-1);
 }
 
-.bg-purple-2 {
+.bg-purple2 {
     background-color: var(--purple-2);
 }
 
-.bg-purple-3 {
+.bg-purple3 {
     background-color: var(--purple-3);
 }
 
-.bg-purple-4 {
+.bg-purple4 {
     background-color: var(--purple-4);
 }
 
-.bg-purple-5 {
+.bg-purple5 {
     background-color: var(--purple-5);
 }
 
-.bg-purple-6 {
+.bg-purple6 {
     background-color: var(--purple-6);
 }
 
-.bg-purple-7 {
+.bg-purple7 {
     background-color: var(--purple-7);
 }
 
-.bg-purple-8 {
+.bg-purple8 {
     background-color: var(--purple-8);
 }
 
-.bg-purple-9 {
+.bg-purple9 {
     background-color: var(--purple-9);
 }
 
-/* Background with opacity */
+    /* ---------------------------------- */
+
+/* --------- 🐧 Background with opacity 🐧 --------- */
 
 .bg-black-op {
     background-color: var(--black-op);
@@ -333,7 +383,9 @@ See GitHub readme for full documentation
     background-color: var(--white-op);
 }
 
-/* Background images */
+/* ---------------------------------- */
+
+/* --------- 📷 Background Images 📷 --------- */
 
 .bgi-cloudy-peaks {
     background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/cloudy-peaks.jpeg) no-repeat center center fixed;
@@ -384,7 +436,9 @@ See GitHub readme for full documentation
     position: relative;
 }
 
-/* Text colours / foreground colours */
+/* ---------------------------------- */
+
+/* --------- 📝 Text colours / foreground colours 📝 --------- */
 
 .fg-white {
     color: var(--white)
@@ -418,7 +472,13 @@ See GitHub readme for full documentation
     color: var(--purple-50);
 }
 
-/* Border colours / foreground colours */
+.fg-green {
+    color: var(--green-50);
+}
+
+/* ---------------------------------- */
+
+/* --------- 👑 Border colours / foreground colours 👑 --------- */
 
 .bdc-white {
     border-color: var(--white)
@@ -452,7 +512,9 @@ See GitHub readme for full documentation
     border-color: var(--purple);
 }
 
-/* Responsive Width (in percentages) */
+/* ---------------------------------- */
+
+/* --------- 🔨 Responsive Width (in percentages) 🔨 --------- */
 
 .wd-10 {
     width: 10vw;
@@ -478,7 +540,9 @@ See GitHub readme for full documentation
     position: absolute;
 }
 
-/* Responsive Height (in percentages) */
+/* ---------------------------------- */
+
+/* --------- 🍏 Responsive Height (in percentages) 🍏 --------- */
 
 .ht-10 {
     height: 10vh;
@@ -504,7 +568,9 @@ See GitHub readme for full documentation
     height: auto;
 }
 
-/* Border radius */
+/* ---------------------------------- */
+
+/* --------- ♥ Border radius ♥ --------- */
 
 .bdr-none {
     border-radius: var(--none)
@@ -517,6 +583,8 @@ See GitHub readme for full documentation
 .bdr-curved {
     border-radius: var(--curved-box);
 }
+
+/* ---------------------------------- */
 
 /* Border style */
 
@@ -946,12 +1014,397 @@ See GitHub readme for full documentation
   position: sticky;
 }
 
+/* ----------------------------- */
+
+/* Buttons Default */
+
+.btn-git{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    background-color: rgb(31, 30, 30);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-git:hover{
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn-success{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #58d158;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-success:hover{
+    border-radius: 7px;
+    background-color: rgb(56, 173, 62)
+}
+
+.btn-restart{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #f8f859;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-restart:hover{
+    border-radius: 7px;
+    background-color: rgb(204, 204, 53);
+}
+
+.btn-error{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 76, 76);
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-error:hover{
+    border-radius: 7px;
+    background-color: rgb(204, 53, 53);
+}
+
+/* ----------------------------- */
+
+/* --- Buttons Bordered --- */
+
+.btn-git-border{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    padding: 10px 40px;
+    border: 3px solid rgb(31, 30, 30);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-git-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
+
+.btn-success-border{
+    text-decoration: none;
+    color: #58d158;
+    border: 3px solid #58d158;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-success-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: #58d158;
+}
+
+.btn-restart-border{
+    text-decoration: none;
+    color: #f8f859;
+    border: 3px solid #f8f859;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-restart-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: #f8f859;
+}
+
+.btn-error-border{
+    text-decoration: none;
+    color: rgb(238, 76, 76);
+    border: 3px solid rgb(238, 76, 76);
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-error-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(238, 76, 76);
+}
+
+/* ----------------------------- */
+
+/* Other Stuff */
+
+.non-select{
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.fade{
+    animation: fade infinite 1s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.fade2{
+    animation: fade infinite 2s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.fade3{
+    animation: fade infinite 3s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.fade4{
+    animation: fade infinite 4s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.fade5{
+    animation: fade infinite 5s;
+}
+
+@keyframes fade{
+    50%{
+        opacity: .3;
+    }
+}
+
+.outline-black{
+    -webkit-text-stroke: 1px black;
+}
+
+.outline-red{
+    -webkit-text-stroke: 1px rgb(255, 0, 0);
+}
+
+.outline-green{
+    -webkit-text-stroke: 1px rgb(0, 255, 64);
+}
+
+.outline-white{
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.outline-blue{
+    -webkit-text-stroke: 1px rgb(2, 81, 253);
+}
+
+.outline-rainbow{
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow{
+    0%{
+        -webkit-text-stroke: 1px black
+    }
+    15%{
+        -webkit-text-stroke: 1px Red;
+    }
+    25%{
+        -webkit-text-stroke: 1px Orange;
+    }
+    50%{
+        -webkit-text-stroke: 1px Yellow;
+    }
+    65%{
+        -webkit-text-stroke: 1px Green;
+    }
+    75%{
+        -webkit-text-stroke: 1px Blue;
+    }
+    85%{
+        -webkit-text-stroke: 1px Indigo;
+    }
+    100%{
+        -webkit-text-stroke: 1px Violet;
+    }
+}
+
+.rainbow{
+    animation: rainbowText 5s infinite;
+}
+
+@keyframes rainbowText{
+    0%{
+        color: black
+    }
+    15%{
+        color: Red;
+    }
+    25%{
+        color: Orange;
+    }
+    50%{
+        color: Yellow;
+    }
+    65%{
+        color: Green;
+    }
+    75%{
+        color: Blue;
+    }
+    85%{
+        color: Indigo;
+    }
+    100%{
+        color: Violet;
+    }
+}
+
+.thm-discord-light{
+    background-color: var(--discord-white);
+    color: black;
+}
+
+.thm-discord-light .btn-disc{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: var(--discord-main);
+    transition: .3s;
+}
+
+.thm-discord-light .btn-disc:hover{
+    color: white;
+    background-color: #4d5f99;
+}
+
+.thm-discord-dark{
+    background-color: var(--discord-dark);
+    color: var(--discord-white)
+}
+
+.thm-discord-dark .btn-disc{
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: var(--discord-light);
+    transition: .3s;
+}
+
+.thm-discord-dark .btn-disc:hover{
+    background-color: #17181a;
+    color: var(--discord-white)
+}
+
+.thm-discord-dark .thm-discord-nav-enabled{
+    background-color: var(--discord-light);
+    margin: 0;
+    padding: 0;
+}
+
+.thm-discord-light .thm-discord-nav-enabled{
+    background-color: var(--discord-main);
+    margin: 0;
+    padding: 0;
+}
+
+.loader-light {
+    display: inline-block;
+    position: relative;
+  }
+  .loader-light {
+    box-sizing: border-box;
+    display: block;
+    width: 1.5%;
+    height: 3%;
+    position: absolute;
+    margin-left: 10px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .loader-light:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .loader-light:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .loader-light:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loader-dark {
+    display: inline-block;
+    position: relative;
+  }
+  .loader-dark {
+    box-sizing: border-box;
+    display: block;
+    width: 1.5%;
+    height: 3%;
+    position: absolute;
+    margin-left: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+  }
+  .loader-dark:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
 /*
-Changelog: v1.3 [ALPHA]
-+ Float (Syntax: flt-<float>)
-+ Padding (Syntax: pd-<padding>)
-+ Allows for layout collums so that you can split content along the page, mobile friendly. (Syntax: "row" and "cl")
-+ Margins (Syntax: mg-<margin>)
-+ Positions (Syntax: pos-<position>)
-* More mobile responsiveness
+
+                  Changelog: v1.4 [Alpha]
+
+  + Themes (Syntax: thm-<theme_name>)
+  + Rainbow Text
+  + Outline Text (Syntax: outline-<outline_color>)
+  + Float (Syntax: flt-<float>)
+  + Padding (Syntax: pd-<padding>)
+  + Allows for layout collums so that you can split content along the page, mobile friendly. (Syntax: "row" and "cl")
+  + Margins (Syntax: mg-<margin>)
+  + Positions (Syntax: pos-<position>)
+      and more..
+
 */

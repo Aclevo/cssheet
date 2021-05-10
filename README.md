@@ -322,7 +322,9 @@ Example:
 Edit `Discord theme example file` for more details.
 ## Made with love by Cob:web Development and our Open source contributors:
 
-Alex Carson - Lead Developer
+Jaiden Collins - Lead Developer
+
+Alex Carson - Former Lead Developer
 
 Adam Salt - Former Lead Developer
 

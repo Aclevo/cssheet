@@ -1,0 +1,31 @@
+
+.rainbow{
+    animation: rainbowText 5s infinite;
+}
+
+@keyframes rainbowText{
+    0%{
+        color: black
+    }
+    15%{
+        color: Red;
+    }
+    25%{
+        color: Orange;
+    }
+    50%{
+        color: Yellow;
+    }
+    65%{
+        color: Green;
+    }
+    75%{
+        color: Blue;
+    }
+    85%{
+        color: Indigo;
+    }
+    100%{
+        color: Violet;
+    }
+}

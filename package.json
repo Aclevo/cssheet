@@ -1,0 +1,28 @@
+{
+  "name": "cssheet",
+  "version": "1.5.0",
+  "description": "The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass scss/cssheet.scss css/cssheet.css",
+    "minify": "npx postcss css/cssheet.css > css/cssheet.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cobweb-Development/cssheet.git"
+  },
+  "keywords": [],
+  "author": "Jaiden Collins, Alex Carson, Adam Salt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cobweb-Development/cssheet/issues"
+  },
+  "homepage": "https://cob-web.xyz/cssheet/",
+  "dependencies": {
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.35.1"
+  }
+}

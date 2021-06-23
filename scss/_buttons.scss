@@ -1,0 +1,122 @@
+
+/* Buttons Default */
+
+.btn-git{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    background-color: rgb(31, 30, 30);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-git:hover{
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn-success{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #58d158;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-success:hover{
+    border-radius: 7px;
+    background-color: rgb(56, 173, 62)
+}
+
+.btn-restart{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #f8f859;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-restart:hover{
+    border-radius: 7px;
+    background-color: rgb(204, 204, 53);
+}
+
+.btn-error{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 76, 76);
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-error:hover{
+    border-radius: 7px;
+    background-color: rgb(204, 53, 53);
+}
+
+/* ----------------------------- */
+
+/* --- Buttons Bordered --- */
+
+.btn-git-border{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    padding: 10px 40px;
+    border: 3px solid rgb(31, 30, 30);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-git-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
+
+.btn-success-border{
+    text-decoration: none;
+    color: #58d158;
+    border: 3px solid #58d158;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-success-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: #58d158;
+}
+
+.btn-restart-border{
+    text-decoration: none;
+    color: #f8f859;
+    border: 3px solid #f8f859;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-restart-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: #f8f859;
+}
+
+.btn-error-border{
+    text-decoration: none;
+    color: rgb(238, 76, 76);
+    border: 3px solid rgb(238, 76, 76);
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-error-border:hover{
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(238, 76, 76);
+}

@@ -258,23 +258,23 @@ To create a column you first need to add a row. The syntax for a row is: `row`
 <div class="row">
 ```
 
-Afterwards you will need to add as many collumns into your row as you see fit.
+Afterwards you will need to add as many columns into your row as you see fit.
 
-The syntax for a collumn is: `cl wd-<width>`
+The syntax for a column is: `cl wd-<width>`
 
-Collumns need a width in order to display the full length of a collumn
+Columns need a width in order to display the full length of a column
 
 #### Full row and column example:
 ```html
 <div class="row">
-  <div class="cl wd-25><h1>Collumn 1</h1></div>
-  <div class="cl wd-25><h1>Collumn 2</h1></div>
-  <div class="cl wd-25><h1>Collumn 3</h1></div>
+  <div class="cl wd-25><h1>Column 1</h1></div>
+  <div class="cl wd-25><h1>Column 2</h1></div>
+  <div class="cl wd-25><h1>Column 3</h1></div>
 </div>
 ```
-This creates a row, and 3 collumns with a maximum width of 25vw. Inside of the collumns are headers.
+This creates a row, and 3 columns with a maximum width of 25vw. Inside of the columns are headers.
 
-* Collumns and rows are mobile responsive
+* Columns and rows are mobile responsive
 
 ### Margins:
 

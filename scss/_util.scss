@@ -1,245 +1,58 @@
 /* --------- 🔨 Responsive Width (in percentages) 🔨 --------- */
 
-.wd-10 {
-    width: 10vw;
-}
-
-.wd-25 {
-    width: 25vw;
-}
-
-.wd-50 {
-    width: 50vw;
-}
-
-.wd-75 {
-    width: 75vw;
-}
-
-.wd-100 {
-    width: 100vw;
-}
-
-.wd-auto {
-    position: absolute;
-}
-
-/* ---------------------------------- */
-
 /* --------- 🍏 Responsive Height (in percentages) 🍏 --------- */
 
-.ht-10 {
-    height: 10vh;
+$presets: 10, 25, 50, 75, 100;
+@each $preset in $presets {
+  .wd {
+    &-#{$preset} {
+      width: #{$preset}vw;
+    }
+    &-auto {
+      position: absolute;
+    }
+  }
+  .ht {
+    &-#{$preset} {
+      height: #{$preset}vh;
+    }
+    &-auto {
+      height: auto;
+    }
+  }
 }
-
-.ht-25 {
-    height: 25vh;
-}
-
-.ht-50 {
-    height: 50vh;
-}
-
-.ht-75 {
-    height: 75vh;
-}
-
-.ht-100 {
-    height: 100vh;
-}
-
-.ht-auto {
-    height: auto;
-}
-
-/* ---------------------------------- */
 
 /* Opacity */
-
-.op-00 {
-    opacity: 0;
+$opacities: 0, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10;
+@each $opacity in $opacities {
+  .op {
+    &-#{$opacity} {
+      opacity: $opacity / 10;
+      &:hover {
+        opacity: $opacity / 10;
+        transition: 400ms;
+      }
+    }
+  }
 }
 
-.op-01 {
-    opacity: 0.1;
-}
+  /* Padding - Margin */
+@for $value from 1 to 16 {
 
-.op-02 {
-    opacity: 0.2;
-}
-
-.op-03 {
-    opacity: 0.3;
-}
-
-.op-04 {
-    opacity: 0.4;
-}
-
-.op-05 {
-    opacity: 0.5;
-}
-
-.op-06 {
-    opacity: 0.6;
-}
-
-.op-07 {
-    opacity: 0.7;
-}
-
-.op-08 {
-    opacity: 0.8;
-}
-
-.op-09 {
-    opacity: 0.9;
-}
-
-.op-10 {
-    opacity: 1;
-}
-
-/* On hover, become slightly transparent */
-
-.oh-00:hover {
-    opacity: 0.0;
-    transition: 400ms;
-}
-
-.oh-01:hover {
-    opacity: 0.1;
-    transition: 400ms;
-}
-
-.oh-02:hover {
-    opacity: 0.2;
-    transition: 400ms;
-}
-
-.oh-03:hover {
-    opacity: 0.3;
-    transition: 400ms;
-}
-
-.oh-04:hover {
-    opacity: 0.4;
-    transition: 400ms;
-}
-
-.oh-05:hover {
-    opacity: 0.5;
-    transition: 400ms;
-}
-
-.oh-06:hover {
-    opacity: 0.6;
-    transition: 400ms;
-}
-
-.oh-07:hover {
-    opacity: 0.7;
-    transition: 400ms;
-}
-
-.oh-08:hover {
-    opacity: 0.8;
-    transition: 400ms;
-}
-
-.oh-09:hover {
-    opacity: 0.9;
-    transition: 400ms;
-}
-
-.oh-10:hover {
-    opacity: 10;
-    transition: 400ms;
-}
-
-
-/* Padding */
-
-.pd-1 {
-  padding: 1vw 1vh;
-}
-
-.pd-2 {
-  padding: 2vw 2vh;
-}
-
-.pd-3 {
-  padding: 3vw 3vh;
-}
-
-.pd-4 {
-  padding: 4vw 4vh;
-}
-
-.pd-5 {
-  padding: 5vw 5vh;
-}
-
-.pd-6 {
-  padding: 6vw 6vh;
-}
-
-.pd-7 {
-  padding: 7vw 7vh;
-}
-
-.pd-8 {
-  padding: 8vw 8vh;
-}
-
-.pd-9 {
-  padding: 9vw 9vh;
-}
-
-.pd-10 {
-  padding: 10vw 10vh;
-}
-
-.pd-11 {
-  padding: 11vw 11vh;
-}
-
-.pd-12 {
-  padding: 12vw 12vh;
-}
-
-.pd-13 {
-  padding: 13vw 13vh;
-}
-
-.pd-14 {
-  padding: 14vw 14vh;
-}
-
-.pd-15 {
-  padding: 15vw 15vh;
-}
-
-.pd-16 {
-  padding: 16vw 16vh;
+  .pd-#{$value} {
+    padding: #{$value}vw #{$value}vh;
+  }
+  .mg-#{$value} {
+    margin: #{$value}vw #{$value}vh;
+  }
 }
 
 /* Float */
-
-.flt-left {
-  float: left;
-}
-
-.flt-right {
-  float: right;
-}
-
-.flt-none {
-  float: none;
-}
-
-.flt-inherit {
-  float: inherit;
+$fl_values: left, right, none, inherit;
+@each $fl_value in $fl_values {
+  .flt-#{$fl_value} {
+    float: #{$fl_value};
+  }
 }
 
 /* Create columns that float next to each other */
@@ -263,100 +76,13 @@
   }
 }
 
-/* Margins */
-
-.mg-0 {
-  margin: 0vw 0vh
-}
-
-.mg-1 {
-  margin: 1vw 1vh
-}
-
-.mg-2 {
-  margin: 2vw 2vh
-}
-
-.mg-3 {
-  margin: 3vw 3vh
-}
-
-.mg-4 {
-  margin: 4vw 4vh
-}
-
-.mg-5 {
-  margin: 5vw 5vh
-}
-
-.mg-6 {
-  margin: 6vw 6vh
-}
-
-.mg-7 {
-  margin: 7vw 7vh
-}
-
-.mg-8 {
-  margin: 8vw 8vh
-}
-
-.mg-9 {
-  margin: 9vw 9vh
-}
-
-.mg-10 {
-  margin: 10vw 10vh
-}
-
-.mg-11 {
-  margin: 11vw 11vh
-}
-
-.mg-12 {
-  margin: 12vw 12vh
-}
-
-.mg-13 {
-  margin: 13vw 13vh
-}
-
-.mg-14 {
-  margin: 14vw 14vh
-}
-
-.mg-15 {
-  margin: 15vw 15vh
-}
-
-.mg-16 {
-  margin: 16vw 16vh
-}
-
 /* Position properties */
-
-.pos-static {
-  position: static;
+$pos_values: static, relative, fixed, absolute, sticky;
+@each $pos_value in $pos_values {
+  .pos-#{$pos_value} {
+    position: #{$pos_value};
+  }
 }
-
-.pos-relative {
-  position: relative;
-}
-
-.pos-fixed {
-  position: fixed;
-}
-
-.pos-absolute {
-  position: absolute;
-}
-
-.pos-sticky {
-  position: sticky;
-}
-
-/* ----------------------------- */
-
 
 /* Other Stuff */
 
@@ -365,52 +91,14 @@
     -webkit-user-select: none;
 }
 
-.fade{
-    animation: fade infinite 1s;
-}
-
-@keyframes fade{
-    50%{
-        opacity: .3;
+/* Fading */
+@for $value from 1 to 5 {
+  .fade#{$value} {
+    animation: fade infinite #{$value}s;
+  }
+  @keyframes fade {
+    50% {
+      opacity: .3
     }
-}
-
-.fade2{
-    animation: fade infinite 2s;
-}
-
-@keyframes fade{
-    50%{
-        opacity: .3;
-    }
-}
-
-.fade3{
-    animation: fade infinite 3s;
-}
-
-@keyframes fade{
-    50%{
-        opacity: .3;
-    }
-}
-
-.fade4{
-    animation: fade infinite 4s;
-}
-
-@keyframes fade{
-    50%{
-        opacity: .3;
-    }
-}
-
-.fade5{
-    animation: fade infinite 5s;
-}
-
-@keyframes fade{
-    50%{
-        opacity: .3;
-    }
+  }
 }

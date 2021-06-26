@@ -1,10 +1,6 @@
-/* --------- 🔨 Responsive Width (in percentages) 🔨 --------- */
-
-/* --------- 🍏 Responsive Height (in percentages) 🍏 --------- */
-
 $presets: 10, 25, 50, 75, 100;
 @each $preset in $presets {
-  .wd {
+  .width {
     &-#{$preset} {
       width: #{$preset}vw;
     }
@@ -12,7 +8,7 @@ $presets: 10, 25, 50, 75, 100;
       position: absolute;
     }
   }
-  .ht {
+  .height {
     &-#{$preset} {
       height: #{$preset}vh;
     }
@@ -22,10 +18,9 @@ $presets: 10, 25, 50, 75, 100;
   }
 }
 
-/* Opacity */
 $opacities: 0, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10;
 @each $opacity in $opacities {
-  .op {
+  .opacity {
     &-#{$opacity} {
       opacity: $opacity / 10;
       &:hover {
@@ -36,28 +31,26 @@ $opacities: 0, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10;
   }
 }
 
-  /* Padding - Margin */
 @for $value from 1 to 16 {
 
-  .pd-#{$value} {
+  .padding-#{$value} {
     padding: #{$value}vw #{$value}vh;
   }
-  .mg-#{$value} {
+  .margin-#{$value} {
     margin: #{$value}vw #{$value}vh;
   }
 }
 
-/* Float */
 $fl_values: left, right, none, inherit;
 @each $fl_value in $fl_values {
-  .flt-#{$fl_value} {
+  .float-#{$fl_value} {
     float: #{$fl_value};
   }
 }
 
 /* Create columns that float next to each other */
 
-.cl {
+.column {
   float: left;
 }
 
@@ -70,30 +63,26 @@ $fl_values: left, right, none, inherit;
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
-  .cl {
+  .column {
     width: 100%;
     padding: 4px 4px;
   }
 }
 
-/* Position properties */
 $pos_values: static, relative, fixed, absolute, sticky;
 @each $pos_value in $pos_values {
-  .pos-#{$pos_value} {
+  .position-#{$pos_value} {
     position: #{$pos_value};
   }
 }
-
-/* Other Stuff */
 
 .non-select{
     user-select: none;
     -webkit-user-select: none;
 }
 
-/* Fading */
 @for $value from 1 to 5 {
-  .fade#{$value} {
+  .fade-#{$value} {
     animation: fade infinite #{$value}s;
   }
   @keyframes fade {

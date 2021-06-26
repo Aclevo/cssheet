@@ -2,13 +2,13 @@
 /* Border style */
 $bds-values: solid, dotted, dashed;
 @each $bds-value in $bds-values {
-    .bds-#{$bds-value} {
+    .border-style-#{$bds-value} {
         border-style: #{$bds-value}
     }
 }
 /* Border width */
 @for $value from 1 to 10 {
-    .bdw-#{$value} {
+    .border-width-#{$value} {
         border-width: #{$value}px;
     }
 }
@@ -16,7 +16,7 @@ $bds-values: solid, dotted, dashed;
 /* --------- ♥ Border radius ♥ --------- */
 $radius-values: none, rounded, curved;
 @each $radius-value in $radius-values {
-    .bdr-#{$radius-value} {
+    .border-radius-#{$radius-value} {
         @if $radius-value == none {
             border-radius: var(--none);
         }

@@ -1,57 +1,52 @@
          /* --------- ✍ Fonts ✍ --------- */
 
-.ft-arial {
+.font-arial {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.ft-georgia {
+.font-georgia {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.ft-courier {
+.font-courier {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.ft-sans {
+.font-sans {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.ft-verdana{
+.font-verdana{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.ft-serif{
+.font-serif{
     font-family: serif;
 }
 
-
-/* Text align */
 $ta-values: left, center, right;
 @each $ta-value in $ta-values {
-    .ta-#{$ta-value} {
+    .text-align-#{$ta-value} {
         text-align: #{$ta-value};
     }
 }
 
-/* Font Size (in vw. changed from rem to make it dynamically sized. if i've done something wrong please hit me in the head with a brick) */
 @for $value from 1 to 10 {
-    .fs-#{$value} {
+    .font-size-#{$value} {
         font-size: #{$value}vw;
     }
 }
 
-/* Text decoration */
 $td-values: bold, underline, none;
 @each $td-value in $td-values {
-    .td-#{$td-value} {
+    .text-decoration-#{$td-value} {
         text-decoration: #{$td-value};
     }
 }
 
-/* Word Wrap */
 $wdw-values: normal, break-word, initial, inherit;
 @each $wdw-value in $wdw-values {
-    .wdw-#{$wdw-value} {
+    .word-wrap-#{$wdw-value} {
         word-wrap: #{$wdw-value};
     }
 }

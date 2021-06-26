@@ -1,56 +1,30 @@
 
 /* Border style */
-
-.bds-solid {
-    border-style: solid;
+$bds-values: solid, dotted, dashed;
+@each $bds-value in $bds-values {
+    .bds-#{$bds-value} {
+        border-style: #{$bds-value}
+    }
 }
-
-.bds-dotted {
-    border-style: dotted;
-}
-
-.bds-dashed {
-    border-style: dashed;
-}
-
 /* Border width */
-
-.bdw-1 {
-    border-width: 1px;
-}
-
-.bdw-2 {
-    border-width: 2px;
-}
-
-.bdw-3 {
-    border-width: 3px;
-}
-
-.bdw-4 {
-    border-width: 4px;
-}
-
-.bdw-5 {
-    border-width: 5px;
-}
-
-.bdw-10 {
-    border-width: 10px;
+@for $value from 1 to 10 {
+    .bdw-#{$value} {
+        border-width: #{$value}px;
+    }
 }
 
 /* --------- ♥ Border radius ♥ --------- */
-
-.bdr-none {
-    border-radius: var(--none)
-}
-
-.bdr-rounded {
-    border-radius: var(--rounded-box);
-}
-
-.bdr-curved {
-    border-radius: var(--curved-box);
+$radius-values: none, rounded, curved;
+@each $radius-value in $radius-values {
+    .bdr-#{$radius-value} {
+        @if $radius-value == none {
+            border-radius: var(--none);
+        }
+        @else {
+            border-radius: var(--#{$radius-value}-box);
+        }
+        
+    }
 }
 
 /* ---------------------------------- */

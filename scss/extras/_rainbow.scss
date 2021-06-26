@@ -1,31 +1,13 @@
-
 .rainbow{
     animation: rainbowText 5s infinite;
 }
 
+$rainbow_colors: (0%: Black, 15%: Red, 25%: Orange, 50%: Yellow, 65%: Green, 75%: Blue, 85%: Indigo, 100%: Violet);
+
 @keyframes rainbowText{
-    0%{
-        color: black
+@each $percentage, $rainbow_color in $rainbow_colors {
+    #{$percentage} {
+        color: $rainbow_color
     }
-    15%{
-        color: Red;
-    }
-    25%{
-        color: Orange;
-    }
-    50%{
-        color: Yellow;
-    }
-    65%{
-        color: Green;
-    }
-    75%{
-        color: Blue;
-    }
-    85%{
-        color: Indigo;
-    }
-    100%{
-        color: Violet;
-    }
+}
 }

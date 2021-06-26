@@ -1,53 +1,16 @@
 /* --------- 📷 Background Images 📷 --------- */
 
-.bgi-cloudy-peaks {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/cloudy-peaks.jpeg) no-repeat center center fixed;
-    background-position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+$assets_url: "https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/";
+$bgis: ("cloudy-peaks", "lovely-mountain", "midnight-city", "night-sky", "night-town", "sea-rock");
+
+@each $bgi in $bgis {
+    .bgi-#{$bgi} {
+        background: url(#{$assets_url}#{$bgi}.jpeg) no-repeat center center fixed;
+        background-position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
 }
-
-.bgi-lovely-mountain {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/lovely-mountain.jpeg) no-repeat center center fixed;
-    background-position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-
-.bgi-midnight-city {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/midnight-city.jpeg) no-repeat center center fixed;
-    background-position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.bgi-night-sky {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-sky.jpeg) no-repeat center center fixed;
-    background-position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.bgi-night-town {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-town.jpeg) no-repeat center center fixed;
-    background-position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.bgi-sea-rock {
-    background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/sea-rock.jpeg) no-repeat center center fixed;
-    background-position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
 
 /* ----------------------------- */

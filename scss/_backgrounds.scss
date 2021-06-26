@@ -1,10 +1,8 @@
-/* --------- 📷 Background Images 📷 --------- */
-
 $assets_url: "https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/";
 $bgis: ("cloudy-peaks", "lovely-mountain", "midnight-city", "night-sky", "night-town", "sea-rock");
 
 @each $bgi in $bgis {
-    .bgi-#{$bgi} {
+    .background-image-#{$bgi} {
         background: url(#{$assets_url}#{$bgi}.jpeg) no-repeat center center fixed;
         background-position: absolute;
         background-repeat: no-repeat;
@@ -12,5 +10,3 @@ $bgis: ("cloudy-peaks", "lovely-mountain", "midnight-city", "night-sky", "night-
         position: relative;
     }
 }
-
-/* ----------------------------- */

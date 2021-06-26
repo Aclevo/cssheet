@@ -1,6 +1,3 @@
-
-/* Buttons Default */
-
 $border-color: none;
 
 %button-default {
@@ -18,7 +15,7 @@ $border-color: none;
     border: 3px solid $border-color;
 }
 
-.btn-git {
+.button-git {
     @extend %button-default;
     color: white;
     background-color: rgb(31, 30, 30);
@@ -27,7 +24,7 @@ $border-color: none;
     }
 }
 
-.btn-success {
+.button-success {
     @extend %button-default;
     color: rgb(255, 255, 255);
     background-color: #58d158;
@@ -36,7 +33,7 @@ $border-color: none;
     }
 }
 
-.btn-restart {
+.button-restart {
     @extend %button-default;
     color: rgb(255, 255, 255);
     background-color: #f8f859;
@@ -45,7 +42,7 @@ $border-color: none;
     }
 }
 
-.btn-error {
+.button-error {
     @extend %button-default;
     color: rgb(255, 255, 255);
     background-color: rgb(238, 76, 76);
@@ -54,11 +51,7 @@ $border-color: none;
     }
 }
 
-/* ----------------------------- */
-
-/* --- Buttons Bordered --- */
-
-.btn-git-border{
+.button-git-border{
     color: rgb(31, 30, 30);
     $border-color: rgb(31, 30, 30);
     &:hover {
@@ -67,7 +60,7 @@ $border-color: none;
     }
 }
 
-.btn-success-border{
+.button-success-border{
     color: #58d158;
     $border-color:#58d158;
     &:hover {
@@ -76,7 +69,7 @@ $border-color: none;
     }
 }
 
-.btn-restart-border{
+.button-restart-border{
     color: #f8f859;
     $border-color:#f8f859;
     &:hover {
@@ -85,7 +78,7 @@ $border-color: none;
     }
 }
 
-.btn-error-border {
+.button-error-border {
     color: rgb(238, 76, 76);
     $border-color:rgb(238, 76, 76);
     &:hover {

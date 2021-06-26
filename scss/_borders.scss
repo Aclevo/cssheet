@@ -14,17 +14,17 @@ $bds-values: solid, dotted, dashed;
 }
 
 /* --------- ♥ Border radius ♥ --------- */
-
-.bdr-none {
-    border-radius: var(--none)
-}
-
-.bdr-rounded {
-    border-radius: var(--rounded-box);
-}
-
-.bdr-curved {
-    border-radius: var(--curved-box);
+$radius-values: none, rounded, curved;
+@each $radius-value in $radius-values {
+    .bdr-#{$radius-value} {
+        @if $radius-value == none {
+            border-radius: var(--none);
+        }
+        @else {
+            border-radius: var(--#{$radius-value}-box);
+        }
+        
+    }
 }
 
 /* ---------------------------------- */

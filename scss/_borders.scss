@@ -1,19 +1,14 @@
-
-/* Border style */
 $bds-values: solid, dotted, dashed;
 @each $bds-value in $bds-values {
     .border-style-#{$bds-value} {
         border-style: #{$bds-value}
     }
 }
-/* Border width */
 @for $value from 1 to 10 {
     .border-width-#{$value} {
         border-width: #{$value}px;
     }
 }
-
-/* --------- ♥ Border radius ♥ --------- */
 $radius-values: none, rounded, curved;
 @each $radius-value in $radius-values {
     .border-radius-#{$radius-value} {
@@ -26,5 +21,3 @@ $radius-values: none, rounded, curved;
         
     }
 }
-
-/* ---------------------------------- */

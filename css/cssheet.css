@@ -1,41 +1,5 @@
 @charset "UTF-8";
-/*
-
-             CSSheet - v1.4 Alpha
-      Made with love by Cob:web Development
-  🏦 See GitHub readme for full documentation 🏦
-
-
-*/
-.cssheet {
-  /* --------- 📷 Background Images 📷 --------- */
-  /* ----------------------------- */
-  /* Border style */
-  /* Border width */
-  /* --------- ♥ Border radius ♥ --------- */
-  /* ---------------------------------- */
-  /* Buttons Default */
-  /* ----------------------------- */
-  /* --- Buttons Bordered --- */
-  /* --------- ✍ Fonts ✍ --------- */
-  /* Text align */
-  /* Font Size (in vw. changed from rem to make it dynamically sized. if i've done something wrong please hit me in the head with a brick) */
-  /* Text decoration */
-  /* Word Wrap */
-  /* --------- 🔨 Responsive Width (in percentages) 🔨 --------- */
-  /* --------- 🍏 Responsive Height (in percentages) 🍏 --------- */
-  /* Opacity */
-  /* Padding - Margin */
-  /* Float */
-  /* Create columns that float next to each other */
-  /* Clear floats after the columns */
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  /* Position properties */
-  /* Other Stuff */
-  /* Fading */
-}
-.cssheet :root {
-  /* --------- 🍏 Colors 🍏 --------- */
+:root {
   --white: white;
   --black: black;
   --discord-dark: #23272a;
@@ -43,8 +7,6 @@
   --discord-whitegrey: #99aab5;
   --discord-white: #ffffff;
   --discord-main: #7289da;
-  /* ---------------------------------- */
-  /* --------- 🍒 HSL colours 🍒 --------- */
   --red-1: hsla(360, 100%, 10%, 1);
   --orange-1: hsla(35, 100%, 10%, 1);
   --yellow-1: hsla(45, 100%, 10%, 1);
@@ -105,755 +67,940 @@
   --aqua-50: var(--aqua-5);
   --blue-50: var(--blue-5);
   --purple-50: var(--purple-5);
-  /* ---------------------------------- */
-  /* --------- 💥 Opacity Colors 💥 --------- */
   --black-op: rgba(0, 0, 0, 0.5);
   --white-op: rgba(255, 255, 255, 0.5);
-  /* ---------------------------------- */
-  /* --------- ⭕ Border Radius ⭕ --------- */
   --none: 0px;
   --rounded-box: 5px;
   --curved-box: 12px;
-  /* ---------------------------------- */
 }
-.cssheet .bg-red1 {
+
+.background-color-red1 {
   background-color: var(--red-1);
 }
-.cssheet .bg-red2 {
+
+.background-color-red2 {
   background-color: var(--red-2);
 }
-.cssheet .bg-red3 {
+
+.background-color-red3 {
   background-color: var(--red-3);
 }
-.cssheet .bg-red4 {
+
+.background-color-red4 {
   background-color: var(--red-4);
 }
-.cssheet .bg-red5 {
+
+.background-color-red5 {
   background-color: var(--red-5);
 }
-.cssheet .bg-red6 {
+
+.background-color-red6 {
   background-color: var(--red-6);
 }
-.cssheet .bg-red7 {
+
+.background-color-red7 {
   background-color: var(--red-7);
 }
-.cssheet .bg-red8 {
+
+.background-color-red8 {
   background-color: var(--red-8);
 }
-.cssheet .fg-red {
+
+.foreground-color-red {
   color: var(--red-50);
 }
-.cssheet .bdc-red {
+
+.border-color-red {
   border-color: var(--red-50);
 }
-.cssheet .bg-orange1 {
+
+.background-color-orange1 {
   background-color: var(--orange-1);
 }
-.cssheet .bg-orange2 {
+
+.background-color-orange2 {
   background-color: var(--orange-2);
 }
-.cssheet .bg-orange3 {
+
+.background-color-orange3 {
   background-color: var(--orange-3);
 }
-.cssheet .bg-orange4 {
+
+.background-color-orange4 {
   background-color: var(--orange-4);
 }
-.cssheet .bg-orange5 {
+
+.background-color-orange5 {
   background-color: var(--orange-5);
 }
-.cssheet .bg-orange6 {
+
+.background-color-orange6 {
   background-color: var(--orange-6);
 }
-.cssheet .bg-orange7 {
+
+.background-color-orange7 {
   background-color: var(--orange-7);
 }
-.cssheet .bg-orange8 {
+
+.background-color-orange8 {
   background-color: var(--orange-8);
 }
-.cssheet .fg-orange {
+
+.foreground-color-orange {
   color: var(--orange-50);
 }
-.cssheet .bdc-orange {
+
+.border-color-orange {
   border-color: var(--orange-50);
 }
-.cssheet .bg-yellow1 {
+
+.background-color-yellow1 {
   background-color: var(--yellow-1);
 }
-.cssheet .bg-yellow2 {
+
+.background-color-yellow2 {
   background-color: var(--yellow-2);
 }
-.cssheet .bg-yellow3 {
+
+.background-color-yellow3 {
   background-color: var(--yellow-3);
 }
-.cssheet .bg-yellow4 {
+
+.background-color-yellow4 {
   background-color: var(--yellow-4);
 }
-.cssheet .bg-yellow5 {
+
+.background-color-yellow5 {
   background-color: var(--yellow-5);
 }
-.cssheet .bg-yellow6 {
+
+.background-color-yellow6 {
   background-color: var(--yellow-6);
 }
-.cssheet .bg-yellow7 {
+
+.background-color-yellow7 {
   background-color: var(--yellow-7);
 }
-.cssheet .bg-yellow8 {
+
+.background-color-yellow8 {
   background-color: var(--yellow-8);
 }
-.cssheet .fg-yellow {
+
+.foreground-color-yellow {
   color: var(--yellow-50);
 }
-.cssheet .bdc-yellow {
+
+.border-color-yellow {
   border-color: var(--yellow-50);
 }
-.cssheet .bg-aqua1 {
+
+.background-color-aqua1 {
   background-color: var(--aqua-1);
 }
-.cssheet .bg-aqua2 {
+
+.background-color-aqua2 {
   background-color: var(--aqua-2);
 }
-.cssheet .bg-aqua3 {
+
+.background-color-aqua3 {
   background-color: var(--aqua-3);
 }
-.cssheet .bg-aqua4 {
+
+.background-color-aqua4 {
   background-color: var(--aqua-4);
 }
-.cssheet .bg-aqua5 {
+
+.background-color-aqua5 {
   background-color: var(--aqua-5);
 }
-.cssheet .bg-aqua6 {
+
+.background-color-aqua6 {
   background-color: var(--aqua-6);
 }
-.cssheet .bg-aqua7 {
+
+.background-color-aqua7 {
   background-color: var(--aqua-7);
 }
-.cssheet .bg-aqua8 {
+
+.background-color-aqua8 {
   background-color: var(--aqua-8);
 }
-.cssheet .fg-aqua {
+
+.foreground-color-aqua {
   color: var(--aqua-50);
 }
-.cssheet .bdc-aqua {
+
+.border-color-aqua {
   border-color: var(--aqua-50);
 }
-.cssheet .bg-blue1 {
+
+.background-color-blue1 {
   background-color: var(--blue-1);
 }
-.cssheet .bg-blue2 {
+
+.background-color-blue2 {
   background-color: var(--blue-2);
 }
-.cssheet .bg-blue3 {
+
+.background-color-blue3 {
   background-color: var(--blue-3);
 }
-.cssheet .bg-blue4 {
+
+.background-color-blue4 {
   background-color: var(--blue-4);
 }
-.cssheet .bg-blue5 {
+
+.background-color-blue5 {
   background-color: var(--blue-5);
 }
-.cssheet .bg-blue6 {
+
+.background-color-blue6 {
   background-color: var(--blue-6);
 }
-.cssheet .bg-blue7 {
+
+.background-color-blue7 {
   background-color: var(--blue-7);
 }
-.cssheet .bg-blue8 {
+
+.background-color-blue8 {
   background-color: var(--blue-8);
 }
-.cssheet .fg-blue {
+
+.foreground-color-blue {
   color: var(--blue-50);
 }
-.cssheet .bdc-blue {
+
+.border-color-blue {
   border-color: var(--blue-50);
 }
-.cssheet .bg-purple1 {
+
+.background-color-purple1 {
   background-color: var(--purple-1);
 }
-.cssheet .bg-purple2 {
+
+.background-color-purple2 {
   background-color: var(--purple-2);
 }
-.cssheet .bg-purple3 {
+
+.background-color-purple3 {
   background-color: var(--purple-3);
 }
-.cssheet .bg-purple4 {
+
+.background-color-purple4 {
   background-color: var(--purple-4);
 }
-.cssheet .bg-purple5 {
+
+.background-color-purple5 {
   background-color: var(--purple-5);
 }
-.cssheet .bg-purple6 {
+
+.background-color-purple6 {
   background-color: var(--purple-6);
 }
-.cssheet .bg-purple7 {
+
+.background-color-purple7 {
   background-color: var(--purple-7);
 }
-.cssheet .bg-purple8 {
+
+.background-color-purple8 {
   background-color: var(--purple-8);
 }
-.cssheet .fg-purple {
+
+.foreground-color-purple {
   color: var(--purple-50);
 }
-.cssheet .bdc-purple {
+
+.border-color-purple {
   border-color: var(--purple-50);
 }
-.cssheet .bg-white {
+
+.background-color-white {
   background-color: var(--white);
 }
-.cssheet .bg-white-op {
+.background-color-white-op {
   background-color: var(var(--white-op));
 }
-.cssheet .fg-white {
+
+.foreground-color-white {
   background-color: var(--white);
 }
-.cssheet .bdc-white {
+
+.border-color-white {
   background-color: var(--white);
 }
-.cssheet .bg-black {
+
+.background-color-black {
   background-color: var(--black);
 }
-.cssheet .bg-black-op {
+.background-color-black-op {
   background-color: var(var(--black-op));
 }
-.cssheet .fg-black {
+
+.foreground-color-black {
   background-color: var(--black);
 }
-.cssheet .bdc-black {
+
+.border-color-black {
   background-color: var(--black);
 }
-.cssheet .bgi-cloudy-peaks {
+
+.background-image-cloudy-peaks {
   background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/cloudy-peaks.jpeg) no-repeat center center fixed;
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.cssheet .bgi-lovely-mountain {
+
+.background-image-lovely-mountain {
   background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/lovely-mountain.jpeg) no-repeat center center fixed;
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.cssheet .bgi-midnight-city {
+
+.background-image-midnight-city {
   background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/midnight-city.jpeg) no-repeat center center fixed;
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.cssheet .bgi-night-sky {
+
+.background-image-night-sky {
   background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-sky.jpeg) no-repeat center center fixed;
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.cssheet .bgi-night-town {
+
+.background-image-night-town {
   background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/night-town.jpeg) no-repeat center center fixed;
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.cssheet .bgi-sea-rock {
+
+.background-image-sea-rock {
   background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/sea-rock.jpeg) no-repeat center center fixed;
   background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.cssheet .bds-solid {
+
+.border-style-solid {
   border-style: solid;
 }
-.cssheet .bds-dotted {
+
+.border-style-dotted {
   border-style: dotted;
 }
-.cssheet .bds-dashed {
+
+.border-style-dashed {
   border-style: dashed;
 }
-.cssheet .bdw-1 {
+
+.border-width-1 {
   border-width: 1px;
 }
-.cssheet .bdw-2 {
+
+.border-width-2 {
   border-width: 2px;
 }
-.cssheet .bdw-3 {
+
+.border-width-3 {
   border-width: 3px;
 }
-.cssheet .bdw-4 {
+
+.border-width-4 {
   border-width: 4px;
 }
-.cssheet .bdw-5 {
+
+.border-width-5 {
   border-width: 5px;
 }
-.cssheet .bdw-6 {
+
+.border-width-6 {
   border-width: 6px;
 }
-.cssheet .bdw-7 {
+
+.border-width-7 {
   border-width: 7px;
 }
-.cssheet .bdw-8 {
+
+.border-width-8 {
   border-width: 8px;
 }
-.cssheet .bdw-9 {
+
+.border-width-9 {
   border-width: 9px;
 }
-.cssheet .bdr-none {
+
+.border-radius-none {
   border-radius: var(--none);
 }
-.cssheet .bdr-rounded {
+
+.border-radius-rounded {
   border-radius: var(--rounded-box);
 }
-.cssheet .bdr-curved {
+
+.border-radius-curved {
   border-radius: var(--curved-box);
 }
-.cssheet .btn-error, .cssheet .btn-restart, .cssheet .btn-success, .cssheet .btn-git {
+
+.button-error, .button-restart, .button-success, .button-git {
   text-decoration: none;
   padding: 10px 40px;
   border-radius: 5px;
   transition: 0.4s;
 }
-.cssheet .btn-error:hover, .cssheet .btn-restart:hover, .cssheet .btn-success:hover, .cssheet .btn-git:hover {
+.button-error:hover, .button-restart:hover, .button-success:hover, .button-git:hover {
   border-radius: 7px;
 }
-.cssheet .btn-git {
+
+.button-git {
   color: white;
   background-color: #1f1e1e;
 }
-.cssheet .btn-git:hover {
+.button-git:hover {
   background-color: black;
 }
-.cssheet .btn-success {
+
+.button-success {
   color: white;
   background-color: #58d158;
 }
-.cssheet .btn-success:hover {
+.button-success:hover {
   background-color: #38ad3e;
 }
-.cssheet .btn-restart {
+
+.button-restart {
   color: white;
   background-color: #f8f859;
 }
-.cssheet .btn-restart:hover {
+.button-restart:hover {
   background-color: #cccc35;
 }
-.cssheet .btn-error {
+
+.button-error {
   color: white;
   background-color: #ee4c4c;
 }
-.cssheet .btn-error:hover {
+.button-error:hover {
   background-color: #cc3535;
 }
-.cssheet .btn-git-border {
+
+.button-git-border {
   color: #1f1e1e;
 }
-.cssheet .btn-git-border:hover {
+.button-git-border:hover {
   color: white;
   background-color: #1f1e1e;
 }
-.cssheet .btn-success-border {
+
+.button-success-border {
   color: #58d158;
 }
-.cssheet .btn-success-border:hover {
+.button-success-border:hover {
   color: white;
   background-color: #58d158;
 }
-.cssheet .btn-restart-border {
+
+.button-restart-border {
   color: #f8f859;
 }
-.cssheet .btn-restart-border:hover {
+.button-restart-border:hover {
   color: white;
   background-color: #f8f859;
 }
-.cssheet .btn-error-border {
+
+.button-error-border {
   color: #ee4c4c;
 }
-.cssheet .btn-error-border:hover {
+.button-error-border:hover {
   color: white;
   background-color: #ee4c4c;
 }
-.cssheet .ft-arial {
+
+.font-arial {
   font-family: Arial, Helvetica, sans-serif;
 }
-.cssheet .ft-georgia {
+
+.font-georgia {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.cssheet .ft-courier {
+
+.font-courier {
   font-family: "Courier New", Courier, monospace;
 }
-.cssheet .ft-sans {
+
+.font-sans {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.cssheet .ft-verdana {
+
+.font-verdana {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.cssheet .ft-serif {
+
+.font-serif {
   font-family: serif;
 }
-.cssheet .ta-left {
+
+.text-align-left {
   text-align: left;
 }
-.cssheet .ta-center {
+
+.text-align-center {
   text-align: center;
 }
-.cssheet .ta-right {
+
+.text-align-right {
   text-align: right;
 }
-.cssheet .fs-1 {
+
+.font-size-1 {
   font-size: 1vw;
 }
-.cssheet .fs-2 {
+
+.font-size-2 {
   font-size: 2vw;
 }
-.cssheet .fs-3 {
+
+.font-size-3 {
   font-size: 3vw;
 }
-.cssheet .fs-4 {
+
+.font-size-4 {
   font-size: 4vw;
 }
-.cssheet .fs-5 {
+
+.font-size-5 {
   font-size: 5vw;
 }
-.cssheet .fs-6 {
+
+.font-size-6 {
   font-size: 6vw;
 }
-.cssheet .fs-7 {
+
+.font-size-7 {
   font-size: 7vw;
 }
-.cssheet .fs-8 {
+
+.font-size-8 {
   font-size: 8vw;
 }
-.cssheet .fs-9 {
+
+.font-size-9 {
   font-size: 9vw;
 }
-.cssheet .td-bold {
+
+.text-decoration-bold {
   text-decoration: bold;
 }
-.cssheet .td-underline {
+
+.text-decoration-underline {
   text-decoration: underline;
 }
-.cssheet .td-none {
+
+.text-decoration-none {
   text-decoration: none;
 }
-.cssheet .wdw-normal {
+
+.word-wrap-normal {
   word-wrap: normal;
 }
-.cssheet .wdw-break-word {
+
+.word-wrap-break-word {
   word-wrap: break-word;
 }
-.cssheet .wdw-initial {
+
+.word-wrap-initial {
   word-wrap: initial;
 }
-.cssheet .wdw-inherit {
+
+.word-wrap-inherit {
   word-wrap: inherit;
 }
-.cssheet .wd-10 {
+
+.width-10 {
   width: 10vw;
 }
-.cssheet .wd-auto {
+.width-auto {
   position: absolute;
 }
-.cssheet .ht-10 {
+
+.height-10 {
   height: 10vh;
 }
-.cssheet .ht-auto {
+.height-auto {
   height: auto;
 }
-.cssheet .wd-25 {
+
+.width-25 {
   width: 25vw;
 }
-.cssheet .wd-auto {
+.width-auto {
   position: absolute;
 }
-.cssheet .ht-25 {
+
+.height-25 {
   height: 25vh;
 }
-.cssheet .ht-auto {
+.height-auto {
   height: auto;
 }
-.cssheet .wd-50 {
+
+.width-50 {
   width: 50vw;
 }
-.cssheet .wd-auto {
+.width-auto {
   position: absolute;
 }
-.cssheet .ht-50 {
+
+.height-50 {
   height: 50vh;
 }
-.cssheet .ht-auto {
+.height-auto {
   height: auto;
 }
-.cssheet .wd-75 {
+
+.width-75 {
   width: 75vw;
 }
-.cssheet .wd-auto {
+.width-auto {
   position: absolute;
 }
-.cssheet .ht-75 {
+
+.height-75 {
   height: 75vh;
 }
-.cssheet .ht-auto {
+.height-auto {
   height: auto;
 }
-.cssheet .wd-100 {
+
+.width-100 {
   width: 100vw;
 }
-.cssheet .wd-auto {
+.width-auto {
   position: absolute;
 }
-.cssheet .ht-100 {
+
+.height-100 {
   height: 100vh;
 }
-.cssheet .ht-auto {
+.height-auto {
   height: auto;
 }
-.cssheet .op-0 {
+
+.opacity-0 {
   opacity: 0;
 }
-.cssheet .op-0:hover {
+.opacity-0:hover {
   opacity: 0;
   transition: 400ms;
 }
-.cssheet .op-1 {
+
+.opacity-1 {
   opacity: 0.1;
 }
-.cssheet .op-1:hover {
+.opacity-1:hover {
   opacity: 0.1;
   transition: 400ms;
 }
-.cssheet .op-2 {
+
+.opacity-2 {
   opacity: 0.2;
 }
-.cssheet .op-2:hover {
+.opacity-2:hover {
   opacity: 0.2;
   transition: 400ms;
 }
-.cssheet .op-3 {
+
+.opacity-3 {
   opacity: 0.3;
 }
-.cssheet .op-3:hover {
+.opacity-3:hover {
   opacity: 0.3;
   transition: 400ms;
 }
-.cssheet .op-4 {
+
+.opacity-4 {
   opacity: 0.4;
 }
-.cssheet .op-4:hover {
+.opacity-4:hover {
   opacity: 0.4;
   transition: 400ms;
 }
-.cssheet .op-5 {
+
+.opacity-5 {
   opacity: 0.5;
 }
-.cssheet .op-5:hover {
+.opacity-5:hover {
   opacity: 0.5;
   transition: 400ms;
 }
-.cssheet .op-6 {
+
+.opacity-6 {
   opacity: 0.6;
 }
-.cssheet .op-6:hover {
+.opacity-6:hover {
   opacity: 0.6;
   transition: 400ms;
 }
-.cssheet .op-7 {
+
+.opacity-7 {
   opacity: 0.7;
 }
-.cssheet .op-7:hover {
+.opacity-7:hover {
   opacity: 0.7;
   transition: 400ms;
 }
-.cssheet .op-8 {
+
+.opacity-8 {
   opacity: 0.8;
 }
-.cssheet .op-8:hover {
+.opacity-8:hover {
   opacity: 0.8;
   transition: 400ms;
 }
-.cssheet .op-9 {
+
+.opacity-9 {
   opacity: 0.9;
 }
-.cssheet .op-9:hover {
+.opacity-9:hover {
   opacity: 0.9;
   transition: 400ms;
 }
-.cssheet .op-10 {
+
+.opacity-10 {
   opacity: 1;
 }
-.cssheet .op-10:hover {
+.opacity-10:hover {
   opacity: 1;
   transition: 400ms;
 }
-.cssheet .pd-1 {
+
+.padding-1 {
   padding: 1vw 1vh;
 }
-.cssheet .mg-1 {
+
+.margin-1 {
   margin: 1vw 1vh;
 }
-.cssheet .pd-2 {
+
+.padding-2 {
   padding: 2vw 2vh;
 }
-.cssheet .mg-2 {
+
+.margin-2 {
   margin: 2vw 2vh;
 }
-.cssheet .pd-3 {
+
+.padding-3 {
   padding: 3vw 3vh;
 }
-.cssheet .mg-3 {
+
+.margin-3 {
   margin: 3vw 3vh;
 }
-.cssheet .pd-4 {
+
+.padding-4 {
   padding: 4vw 4vh;
 }
-.cssheet .mg-4 {
+
+.margin-4 {
   margin: 4vw 4vh;
 }
-.cssheet .pd-5 {
+
+.padding-5 {
   padding: 5vw 5vh;
 }
-.cssheet .mg-5 {
+
+.margin-5 {
   margin: 5vw 5vh;
 }
-.cssheet .pd-6 {
+
+.padding-6 {
   padding: 6vw 6vh;
 }
-.cssheet .mg-6 {
+
+.margin-6 {
   margin: 6vw 6vh;
 }
-.cssheet .pd-7 {
+
+.padding-7 {
   padding: 7vw 7vh;
 }
-.cssheet .mg-7 {
+
+.margin-7 {
   margin: 7vw 7vh;
 }
-.cssheet .pd-8 {
+
+.padding-8 {
   padding: 8vw 8vh;
 }
-.cssheet .mg-8 {
+
+.margin-8 {
   margin: 8vw 8vh;
 }
-.cssheet .pd-9 {
+
+.padding-9 {
   padding: 9vw 9vh;
 }
-.cssheet .mg-9 {
+
+.margin-9 {
   margin: 9vw 9vh;
 }
-.cssheet .pd-10 {
+
+.padding-10 {
   padding: 10vw 10vh;
 }
-.cssheet .mg-10 {
+
+.margin-10 {
   margin: 10vw 10vh;
 }
-.cssheet .pd-11 {
+
+.padding-11 {
   padding: 11vw 11vh;
 }
-.cssheet .mg-11 {
+
+.margin-11 {
   margin: 11vw 11vh;
 }
-.cssheet .pd-12 {
+
+.padding-12 {
   padding: 12vw 12vh;
 }
-.cssheet .mg-12 {
+
+.margin-12 {
   margin: 12vw 12vh;
 }
-.cssheet .pd-13 {
+
+.padding-13 {
   padding: 13vw 13vh;
 }
-.cssheet .mg-13 {
+
+.margin-13 {
   margin: 13vw 13vh;
 }
-.cssheet .pd-14 {
+
+.padding-14 {
   padding: 14vw 14vh;
 }
-.cssheet .mg-14 {
+
+.margin-14 {
   margin: 14vw 14vh;
 }
-.cssheet .pd-15 {
+
+.padding-15 {
   padding: 15vw 15vh;
 }
-.cssheet .mg-15 {
+
+.margin-15 {
   margin: 15vw 15vh;
 }
-.cssheet .flt-left {
+
+.float-left {
   float: left;
 }
-.cssheet .flt-right {
+
+.float-right {
   float: right;
 }
-.cssheet .flt-none {
+
+.float-none {
   float: none;
 }
-.cssheet .flt-inherit {
+
+.float-inherit {
   float: inherit;
 }
-.cssheet .cl {
+
+.column {
   float: left;
 }
-.cssheet .row:after {
+
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
+
 @media screen and (max-width: 600px) {
-  .cssheet .cl {
+  .column {
     width: 100%;
     padding: 4px 4px;
   }
 }
-.cssheet .pos-static {
+.position-static {
   position: static;
 }
-.cssheet .pos-relative {
+
+.position-relative {
   position: relative;
 }
-.cssheet .pos-fixed {
+
+.position-fixed {
   position: fixed;
 }
-.cssheet .pos-absolute {
+
+.position-absolute {
   position: absolute;
 }
-.cssheet .pos-sticky {
+
+.position-sticky {
   position: sticky;
 }
-.cssheet .non-select {
+
+.non-select {
   user-select: none;
   -webkit-user-select: none;
 }
-.cssheet .fade1 {
+
+.fade-1 {
   animation: fade infinite 1s;
 }
+
 @keyframes fade {
   50% {
     opacity: 0.3;
   }
 }
-.cssheet .fade2 {
+.fade-2 {
   animation: fade infinite 2s;
 }
+
 @keyframes fade {
   50% {
     opacity: 0.3;
   }
 }
-.cssheet .fade3 {
+.fade-3 {
   animation: fade infinite 3s;
 }
+
 @keyframes fade {
   50% {
     opacity: 0.3;
   }
 }
-.cssheet .fade4 {
+.fade-4 {
   animation: fade infinite 4s;
 }
+
 @keyframes fade {
   50% {
     opacity: 0.3;
   }
 }
-.cssheet .rainbow {
+.rainbow {
   animation: rainbowText 5s infinite;
 }
+
 @keyframes rainbowText {
   0% {
     color: Black;
@@ -880,11 +1027,12 @@
     color: Violet;
   }
 }
-.cssheet .thm-discord-light {
+.thm-discord-light {
   background-color: var(--discord-white);
   color: black;
 }
-.cssheet .thm-discord-light .btn-disc {
+
+.thm-discord-light .btn-disc {
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -892,15 +1040,18 @@
   background-color: var(--discord-main);
   transition: 0.3s;
 }
-.cssheet .thm-discord-light .btn-disc:hover {
+
+.thm-discord-light .btn-disc:hover {
   color: white;
   background-color: #4d5f99;
 }
-.cssheet .thm-discord-dark {
+
+.thm-discord-dark {
   background-color: var(--discord-dark);
   color: var(--discord-white);
 }
-.cssheet .thm-discord-dark .btn-disc {
+
+.thm-discord-dark .btn-disc {
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -908,25 +1059,30 @@
   background-color: var(--discord-light);
   transition: 0.3s;
 }
-.cssheet .thm-discord-dark .btn-disc:hover {
+
+.thm-discord-dark .btn-disc:hover {
   background-color: #17181a;
   color: var(--discord-white);
 }
-.cssheet .thm-discord-dark .thm-discord-nav-enabled {
+
+.thm-discord-dark .thm-discord-nav-enabled {
   background-color: var(--discord-light);
   margin: 0;
   padding: 0;
 }
-.cssheet .thm-discord-light .thm-discord-nav-enabled {
+
+.thm-discord-light .thm-discord-nav-enabled {
   background-color: var(--discord-main);
   margin: 0;
   padding: 0;
 }
-.cssheet .loader-light {
+
+.loader-light {
   display: inline-block;
   position: relative;
 }
-.cssheet .loader-light {
+
+.loader-light {
   box-sizing: border-box;
   display: block;
   width: 1.5%;
@@ -938,15 +1094,19 @@
   animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;
 }
-.cssheet .loader-light:nth-child(1) {
+
+.loader-light:nth-child(1) {
   animation-delay: -0.45s;
 }
-.cssheet .loader-light:nth-child(2) {
+
+.loader-light:nth-child(2) {
   animation-delay: -0.3s;
 }
-.cssheet .loader-light:nth-child(3) {
+
+.loader-light:nth-child(3) {
   animation-delay: -0.15s;
 }
+
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -955,11 +1115,12 @@
     transform: rotate(360deg);
   }
 }
-.cssheet .loader-dark {
+.loader-dark {
   display: inline-block;
   position: relative;
 }
-.cssheet .loader-dark {
+
+.loader-dark {
   box-sizing: border-box;
   display: block;
   width: 1.5%;
@@ -971,9 +1132,11 @@
   animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: black transparent transparent transparent;
 }
-.cssheet .loader-dark:nth-child(1) {
+
+.loader-dark:nth-child(1) {
   animation-delay: -0.45s;
 }
+
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -982,5 +1145,13 @@
     transform: rotate(360deg);
   }
 }
+/*
+
+             CSSheet - v1.4 Alpha
+      Made with love by Cob:web Development
+  🏦 See GitHub readme for full documentation 🏦
+
+
+*/
 
 /*# sourceMappingURL=cssheet.css.map */

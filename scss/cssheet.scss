@@ -7,11 +7,12 @@
 
 */
 
-  @import "colors/colors";
-  @import "backgrounds";
-  @import "borders";
-  @import "buttons";
-  @import "fonts";
-  @import "util";
-  @import "extras/extras";
-  @import "themes/themes";
+  @use "root";
+  @use "colors/colors";
+  @use "backgrounds";
+  @use "borders";
+  @use "buttons";
+  @use "fonts";
+  @use "util";
+  @use "extras/extras";
+  @use "themes/themes";

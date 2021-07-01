@@ -1,17 +1,17 @@
 $bds-values: solid, dotted, dashed;
 @each $bds-value in $bds-values {
-    .border-style-#{$bds-value} {
+    .cs-border-style-#{$bds-value} {
         border-style: #{$bds-value}
     }
 }
 @for $value from 1 to 10 {
-    .border-width-#{$value} {
+    .cs-border-width-#{$value} {
         border-width: #{$value}px;
     }
 }
 $radius-values: none, rounded, curved;
 @each $radius-value in $radius-values {
-    .border-radius-#{$radius-value} {
+    .cs-border-radius-#{$radius-value} {
         @if $radius-value == none {
             border-radius: var(--none);
         }

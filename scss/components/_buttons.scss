@@ -15,7 +15,7 @@ $border-color: none;
     border: 3px solid $border-color;
 }
 
-.button-git {
+.cs-button-git {
     @extend %button-default;
     color: white;
     background-color: rgb(31, 30, 30);
@@ -24,7 +24,7 @@ $border-color: none;
     }
 }
 
-.button-success {
+.cs-button-success {
     @extend %button-default;
     color: rgb(255, 255, 255);
     background-color: #58d158;
@@ -33,7 +33,7 @@ $border-color: none;
     }
 }
 
-.button-restart {
+.cs-button-restart {
     @extend %button-default;
     color: rgb(255, 255, 255);
     background-color: #f8f859;
@@ -42,7 +42,7 @@ $border-color: none;
     }
 }
 
-.button-error {
+.cs-button-error {
     @extend %button-default;
     color: rgb(255, 255, 255);
     background-color: rgb(238, 76, 76);
@@ -51,7 +51,7 @@ $border-color: none;
     }
 }
 
-.button-git-border{
+.cs-button-git-border{
     @extend %button-bordered;
     color: rgb(31, 30, 30);
     $border-color: rgb(31, 30, 30);
@@ -61,7 +61,7 @@ $border-color: none;
     }
 }
 
-.button-success-border{
+.cs-button-success-border{
     @extend %button-bordered;
     color: #58d158;
     $border-color:#58d158;
@@ -71,7 +71,7 @@ $border-color: none;
     }
 }
 
-.button-restart-border{
+.cs-button-restart-border{
     @extend %button-bordered;
     color: #f8f859;
     $border-color:#f8f859;
@@ -81,7 +81,7 @@ $border-color: none;
     }
 }
 
-.button-error-border {
+.cs-button-error-border {
     @extend %button-bordered;
     color: rgb(238, 76, 76);
     $border-color:rgb(238, 76, 76);

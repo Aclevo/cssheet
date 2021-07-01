@@ -1,11 +1,6 @@
 :root {
     --white: white;
     --black: black;
-    --discord-dark: #23272a;
-    --discord-light: #2c2f33;
-    --discord-whitegrey: #99aab5;
-    --discord-white: #ffffff;
-    --discord-main: #7289da;
 
     $colors: (red: 360, orange: 35, yellow: 45, aqua: 168, blue: 231, purple: 275);
     @for $color-value from 1 to 10 {

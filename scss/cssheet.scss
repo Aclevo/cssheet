@@ -1,17 +1,13 @@
 /*
 
-             CSSheet - v1.4 Alpha
-      Made with love by Cob:web Development
+             CSSheet - v1.0 Beta
+      Made with love by Cob:web-Aclevo
   🏦 See GitHub readme for full documentation 🏦
 
 
 */
 
   @use "root";
-  @use "colors/colors";
-  @use "backgrounds";
-  @use "borders";
-  @use "buttons";
-  @use "fonts";
-  @use "util";
-  @use "extras/extras";
+  @use "components/components" as components;
+  @use "util/utilities" as utilities;
+  @use "extras/extras" as extras;

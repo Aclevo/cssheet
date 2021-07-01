@@ -37,13 +37,13 @@ Default CSSheet colors: Black, white, red, orange, yellow, aqua, blue, purple (Y
 
 Brightness values: 1, 2, 3, 4, 5, 6, 7, 8, 9
 
-The background color syntax is: `background-<color>-<brightness>`
+The background-color color syntax is: `background-color-<color>-<brightness>`
 
 Example:
 ```html
-<div class="background-red-5">
+<div class="background-color-red-5">
 ```
-This will create a divider with a red background and a brightness of 50% (default)
+This will create a divider with a red background-color and a brightness of 50% (default)
 
 ### Background images
 
@@ -181,11 +181,11 @@ This creates a divider with an opacity/transparency of 0.5
 
 Default colors: black, white
 
-Backgrounds with opacity syntax: `background-<color>-op
+Backgrounds with opacity syntax: `background-color-<color>-op
 
 Example:
 ```html
-<div class="background-black-op">
+<div class="background-color-black-op">
 ```
 This creates a divider, which is transparent and black
 

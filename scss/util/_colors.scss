@@ -2,28 +2,28 @@ $colors: red, orange, yellow, aqua, blue, purple;
 $contrasts: white, black;
 @each $color in $colors {
     @for $value from 1 to 9 {
-        .background-color-#{$color}-#{$value} {
+        .cs-background-color-#{$color}-#{$value} {
             background-color: var(--#{$color}-#{$value});
         }
     }
-    .foreground-color-#{$color} {
+    .cs-foreground-color-#{$color} {
         color: var(--#{$color}-50);
     }
-    .border-color-#{$color} {
+    .cs-border-color-#{$color} {
         border-color: var(--#{$color}-50);
     }
 }
 @each $contrast in $contrasts {
-    .background-color-#{$contrast} {
+    .cs-background-color-#{$contrast} {
         background-color: var(--#{$contrast});
         &-op {
         background-color: var(var(--#{$contrast}-op));
     }
     }
-    .foreground-color-#{$contrast} {
+    .cs-foreground-color-#{$contrast} {
         color: var(--#{$contrast});
     }
-    .border-color-#{$contrast} {
+    .cs-border-color-#{$contrast} {
         border-color: var(--#{$contrast});
     }
 }

@@ -2,7 +2,7 @@ $colors: red, orange, yellow, aqua, blue, purple;
 $contrasts: white, black;
 @each $color in $colors {
     @for $value from 1 to 9 {
-        .background-color-#{$color}#{$value} {
+        .background-color-#{$color}-#{$value} {
             background-color: var(--#{$color}-#{$value});
         }
     }
@@ -21,9 +21,9 @@ $contrasts: white, black;
     }
     }
     .foreground-color-#{$contrast} {
-        background-color: var(--#{$contrast});
+        color: var(--#{$contrast});
     }
     .border-color-#{$contrast} {
-        background-color: var(--#{$contrast});
+        border-color: var(--#{$contrast});
     }
 }

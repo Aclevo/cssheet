@@ -1,29 +1,46 @@
-$colors: red, orange, yellow, aqua, blue, purple;
+$all_colors_hsla: (red: 360, orange: 35, yellow: 45, aqua: 168, blue: 231, purple: 275);
+@function make_color($color_name, $color_value_hsla, $color_brightness) {
+    $calculate_color: percentage($color_brightness / 10);
+    @debug $color_value_hsla, 100%, percentage($color_brightness / 10);
+    @debug hsla($color_value_hsla, 100%, percentage($color_brightness / 10), 1);
+    @return hsla($color_value_hsla, 100%, percentage($color_brightness / 10), 1);
+}
 $contrasts: white, black;
-@each $color in $colors {
-    @for $value from 1 to 9 {
-        .background-color-#{$color}-#{$value} {
-            background-color: var(--#{$color}-#{$value});
+@each $color_name, $hsla_number in $all_colors_hsla {
+        $color_uses: foreground, background, border;
+        @each $color_use in $color_uses {
+            @for $color_number from 1 to 10 {
+            .#{$color_use}-color-#{$color_name}-#{$color_number} {
+                @if $color_use == "foreground" {
+                    color: make_color($color_name, $hsla_number, $color_number);
+                    &-op {
+                        color: transparentize(make_color($color_name, $hsla_number, $color_number), 0.5);
+                    }
+                } @else {
+                    #{$color_use}-color: make_color($color_name, $hsla_number, $color_number);
+                    &-op {
+                        color: transparentize(make_color($color_name, $hsla_number, $color_number), 0.5);
+                    }
+                }
+            }
         }
-    }
-    .foreground-color-#{$color} {
-        color: var(--#{$color}-50);
-    }
-    .border-color-#{$color} {
-        border-color: var(--#{$color}-50);
     }
 }
 @each $contrast in $contrasts {
-    .background-color-#{$contrast} {
-        background-color: var(--#{$contrast});
-        &-op {
-        background-color: var(var(--#{$contrast}-op));
-    }
-    }
-    .foreground-color-#{$contrast} {
-        color: var(--#{$contrast});
-    }
-    .border-color-#{$contrast} {
-        border-color: var(--#{$contrast});
+     $contrast_uses: foreground, background, border;
+     @each $contrast_use in $contrast_uses {
+        .#{$contrast_use}-color-#{$contrast} {
+            @if $contrast_use == "foreground" {
+                color: $contrast;
+                &-op {
+                    color: transparentize($contrast, 0.5)
+                }
+            } @else {
+                #{$contrast-use}-color: $contrast;
+                &-op {
+                    color: transparentize($contrast, 0.5)
+                }
+            }
+        }
     }
 }

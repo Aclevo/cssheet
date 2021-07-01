@@ -7,21 +7,14 @@
     --discord-white: #ffffff;
     --discord-main: #7289da;
 
+    $colors: (red: 360, orange: 35, yellow: 45, aqua: 168, blue: 231, purple: 275);
     @for $color-value from 1 to 10 {
-        $calculate_color: percentage($color-value / 10);
-        --red-#{$color-value}: hsla(360, 100%, #{$calculate_color}, 1);
-
-        --orange-#{$color-value}: hsla(35, 100%, #{$calculate_color}, 1);
-
-        --yellow-#{$color-value}: hsla(45, 100%, #{$calculate_color}, 1);
-
-        --aqua-#{$color-value}: hsla(168, 100%, #{$calculate_color}, 1);
-
-        --blue-#{$color-value}: hsla(231, 100%, #{$calculate_color}, 1);
-
-        --purple-#{$color-value}: hsla(275, 100%, #{$calculate_color}, 1);
+        @each $color-name, $color-code in $colors {
+            $calculate_color: percentage($color-value / 10);
+            --#{$color-name}-#{$color-value}: hsla(#{$color-code}, 100%, #{$calculate_color}, 1)
+        }
     }
-    $colors: red, orange, yellow, aqua, blue, purple;
+    
     @each $color in $colors {
         --#{$color}-50: var(--#{$color}-5);
     }

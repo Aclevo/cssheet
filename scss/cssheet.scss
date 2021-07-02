@@ -1,13 +1,3 @@
-/*
-
-             CSSheet - v1.0 Beta
-      Made with love by Cob:web-Aclevo
-  🏦 See GitHub readme for full documentation 🏦
-
-
-*/
-
-  @use "root";
-  @use "components/components" as components;
-  @use "util/utilities" as utilities;
-  @use "extras/extras" as extras;
+@use "components/components" as components;
+@use "util/utilities" as utilities;
+@use "extras/extras" as extras;

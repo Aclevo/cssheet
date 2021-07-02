@@ -18,8 +18,7 @@ $presets: 10, 25, 50, 75, 100;
   }
 }
 
-$opacities: 0, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10;
-@each $opacity in $opacities {
+@for $opacity from 0 to 10  {
   .cs-opacity {
     &-#{$opacity} {
       opacity: $opacity / 10;
@@ -32,7 +31,6 @@ $opacities: 0, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10;
 }
 
 @for $value from 1 to 16 {
-
   .cs-padding-#{$value} {
     padding: #{$value}vw #{$value}vh;
   }

@@ -9,15 +9,9 @@ $bds-values: solid, dotted, dashed;
         border-width: #{$value}px;
     }
 }
-$radius-values: none, rounded, curved;
-@each $radius-value in $radius-values {
+$radius-values: (none: 0px, rounded: 5px, curved: 12px);
+@each $radius-value, $radius-px in $radius-values {
     .cs-border-radius-#{$radius-value} {
-        @if $radius-value == none {
-            border-radius: var(--none);
-        }
-        @else {
-            border-radius: var(--#{$radius-value}-box);
-        }
-        
+            border-radius: $radius-px;
     }
 }

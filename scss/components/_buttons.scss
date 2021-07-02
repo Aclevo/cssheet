@@ -15,78 +15,74 @@ $border-color: none;
     border: 3px solid $border-color;
 }
 
-.cs-button-git {
-    @extend %button-default;
-    color: white;
-    background-color: rgb(31, 30, 30);
-    &:hover {
-        background-color: rgb(0, 0, 0);
-    }
-}
-
-.cs-button-success {
-    @extend %button-default;
-    color: rgb(255, 255, 255);
-    background-color: #58d158;
-    &:hover {
-        background-color: rgb(56, 173, 62)
-    }
-}
-
-.cs-button-restart {
-    @extend %button-default;
-    color: rgb(255, 255, 255);
-    background-color: #f8f859;
-    &:hover {
-        background-color: rgb(204, 204, 53);
-    }
-}
-
-.cs-button-error {
-    @extend %button-default;
-    color: rgb(255, 255, 255);
-    background-color: rgb(238, 76, 76);
-    &:hover {
-        background-color: rgb(204, 53, 53);
-    }
-}
-
-.cs-button-git-border{
-    @extend %button-bordered;
-    color: rgb(31, 30, 30);
-    $border-color: rgb(31, 30, 30);
-    &:hover {
-    color: white;
-    background-color: rgb(31, 30, 30);
-    }
-}
-
-.cs-button-success-border{
-    @extend %button-bordered;
-    color: #58d158;
-    $border-color:#58d158;
-    &:hover {
-    color: white;
-    background-color: #58d158;
-    }
-}
-
-.cs-button-restart-border{
-    @extend %button-bordered;
-    color: #f8f859;
-    $border-color:#f8f859;
-    &:hover {
+.cs-button {
+    &-git {
+        @extend %button-default;
         color: white;
+        background-color: rgb(31, 30, 30);
+        &:hover {
+            background-color: rgb(0, 0, 0);
+        }
+        &-border {
+            @extend %button-bordered;
+            color: rgb(31, 30, 30);
+            $border-color: rgb(31, 30, 30);
+            &:hover {
+            color: white;
+            background-color: rgb(31, 30, 30);
+            }
+        }
+    }
+    &-success {
+        @extend %button-default;
+        color: rgb(255, 255, 255);
+        background-color: #58d158;
+        &:hover {
+            background-color: rgb(56, 173, 62)
+        }
+        &-border {
+            @extend %button-bordered;
+            color: #58d158;
+            $border-color:#58d158;
+            &:hover {
+            color: white;
+            background-color: #58d158;
+            }
+
+        }
+    }
+    &-restart {
+        @extend %button-default;
+        color: rgb(255, 255, 255);
         background-color: #f8f859;
+        &:hover {
+            background-color: rgb(204, 204, 53);
+        }
+        &-border {
+            @extend %button-bordered;
+            color: #f8f859;
+            $border-color:#f8f859;
+            &:hover {
+                color: white;
+                background-color: #f8f859;
+            }
+        }
     }
-}
-
-.cs-button-error-border {
-    @extend %button-bordered;
-    color: rgb(238, 76, 76);
-    $border-color:rgb(238, 76, 76);
-    &:hover {
-        color: white;
+    &-error {
+        @extend %button-default;
+        color: rgb(255, 255, 255);
         background-color: rgb(238, 76, 76);
+        &:hover {
+            background-color: rgb(204, 53, 53);
+        }
+        &-border {
+            @extend %button-bordered;
+            color: rgb(238, 76, 76);
+            $border-color:rgb(238, 76, 76);
+            &:hover {
+                color: white;
+                background-color: rgb(238, 76, 76);
+            }
+        }
     }
 }

@@ -1,10 +1,4 @@
 @charset "UTF-8";
-:root {
-  --none: 0px;
-  --rounded-box: 5px;
-  --curved-box: 12px;
-}
-
 .cs-background-image-cloudy-peaks {
   background: url(https://raw.githubusercontent.com/cobwebdev/cssheet/main/assets/cloudy-peaks.jpeg) no-repeat center center fixed;
   background-position: absolute;

@@ -31,7 +31,6 @@ $presets: 10, 25, 50, 75, 100;
 }
 
 @for $value from 1 to 16 {
-
   .cs-padding-#{$value} {
     padding: #{$value}vw #{$value}vh;
   }

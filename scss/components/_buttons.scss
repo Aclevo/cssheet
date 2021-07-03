@@ -1,5 +1,24 @@
 $border-color: none;
 
+@mixin button_border_prop($bd_fg, $bd_bg) {
+
+}
+
+@mixin button_hover_prop($hv_fg, $hv_bg) {
+
+}
+
+@mixin button_prop($color, $bg: $color, $bd: False, $hv: False, $bd_prop: ($bd_fg: $color, $bd_bg: $bg), $hv_prop: ($hv_fg: $color, $hv_bg: $bg)) {
+    color: $color;
+    background-color: $bg;
+    @if $hv == "True" {
+        @include button_hover_properties($hv_prop);
+    }
+    @if $bd == "True" {
+        @include button_border_properties($bd_prop);
+    }
+}
+
 %button-default {
     text-decoration: none;
     padding: 10px 40px;
@@ -18,6 +37,7 @@ $border-color: none;
 .cs-button {
     &-git {
         @extend %button-default;
+        @include button_prop(white, rgb(31, 30, 30), $hv: True, $hv_prop: ($hv_bg: black));
         color: white;
         background-color: rgb(31, 30, 30);
         &:hover {

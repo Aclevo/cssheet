@@ -5,24 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass scss/cssheet.scss css/cssheet.css",
-    "minify": "npx postcss css/cssheet.css > css/cssheet.min.css"
+    "compile": "node-sass --output-style compressed --source-map true scss/cssheet.scss css/cssheet.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cobweb-Development/cssheet.git"
   },
   "keywords": [],
-  "author": "Jaiden Collins, Alex Carson, Adam Salt",
+  "author": "Reasonably Selenium, Jaiden Collins, Alex Carson, Adam Salt",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Cobweb-Development/cssheet/issues"
   },
   "homepage": "https://cob-web.xyz/cssheet/",
   "dependencies": {
-    "cssnano": "^5.0.6",
-    "postcss": "^8.3.5",
-    "postcss-cli": "^8.3.1",
-    "sass": "^1.35.1"
+    "node-sass": "^6.0.1"
   }
 }

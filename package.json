@@ -4,7 +4,6 @@
   "description": "The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "node-sass --output-style compressed --source-map true scss/cssheet.scss css/cssheet.css"
   },
   "repository": {
@@ -17,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/Cobweb-Aclevo/cssheet/issues"
   },
-  "homepage": "https://cob-web.xyz/cssheet/",
+  "homepage": "https://cobweb-aclevo.org/cssheet/",
   "dependencies": {
     "node-sass": "^6.0.1"
   }

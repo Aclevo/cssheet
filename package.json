@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cobweb-Development/cssheet.git"
+    "url": "git+https://github.com/Cobweb-Aclevo/cssheet.git"
   },
   "keywords": [],
   "author": "Reasonably Selenium, Jaiden Collins, Alex Carson, Adam Salt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Cobweb-Development/cssheet/issues"
+    "url": "https://github.com/Cobweb-Aclevo/cssheet/issues"
   },
   "homepage": "https://cob-web.xyz/cssheet/",
   "dependencies": {

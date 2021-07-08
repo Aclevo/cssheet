@@ -1,21 +1,27 @@
 $border-color: none;
 
-@mixin button_border_prop($bd_fg, $bd_bg) {
+// $bd_style/$hv_style
+// True -> don't change color
+// Lighten -> lighten color by 10%
+// Darken -> darken color by 10%
+// False -> no style
+
+@mixin include_border($bd_fg, $bd_bg, $bd_style) {
 
 }
 
-@mixin button_hover_prop($hv_fg, $hv_bg) {
+@mixin include_hover($hv_fg, $hv_bg, $hv_style) {
 
 }
 
-@mixin button_prop($color, $bg: $color, $bd: False, $hv: False, $bd_prop: ($bd_fg: $color, $bd_bg: $bg), $hv_prop: ($hv_fg: $color, $hv_bg: $bg)) {
-    color: $color;
+@mixin button_prop($fg, $bg: $fg, $hv: False, $bd: False) {
+    color: $fg;
     background-color: $bg;
-    @if $hv == "True" {
-        @include button_hover_properties($hv_prop);
+    @if $hv == "True" or "Lighten" or "Darken" {
+        @include include_hover($fg, $bg, $hv)
     }
-    @if $bd == "True" {
-        @include button_border_properties($bd_prop);
+    @if $bd == "True" or "Lighten" or "Darken" {
+        @include include_border($fg, $bg, $bd)
     }
 }
 
@@ -37,7 +43,7 @@ $border-color: none;
 .cs-button {
     &-git {
         @extend %button-default;
-        @include button_prop(white, rgb(31, 30, 30), $hv: True, $hv_prop: ($hv_bg: black));
+        @include button_prop(white, rgb(31, 30, 30), Same, Same);
         color: white;
         background-color: rgb(31, 30, 30);
         &:hover {

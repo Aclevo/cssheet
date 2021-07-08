@@ -1,5 +1,10 @@
+$build_at_runtime: width, height, opacity, padding, margin, float, position, fade;
+
+@each $parameter in $build_at_runtime {
+
 $presets: 10, 25, 50, 75, 100;
 @each $preset in $presets {
+  @if $parameter == "width" {
   .cs-width {
     &-#{$preset} {
       width: #{$preset}vw;
@@ -8,6 +13,8 @@ $presets: 10, 25, 50, 75, 100;
       position: absolute;
     }
   }
+  }
+  @if $parameter == "height" {
   .cs-height {
     &-#{$preset} {
       height: #{$preset}vh;
@@ -16,35 +23,45 @@ $presets: 10, 25, 50, 75, 100;
       height: auto;
     }
   }
+  }
 }
 
-@for $opacity from 0 to 10  {
-  .cs-opacity {
-    &-#{$opacity} {
-      opacity: $opacity / 10;
-      &:hover {
+  @if $parameter == "opacity" {
+    @for $opacity from 0 to 10  {
+    .cs-opacity {
+      &-#{$opacity} {
         opacity: $opacity / 10;
-        transition: 400ms;
+        &:hover {
+          opacity: $opacity / 10;
+          transition: 400ms;
+        }
       }
     }
   }
-}
+  }
 
 @for $value from 1 to 16 {
+  @if $parameter == "padding" {
   .cs-padding-#{$value} {
     padding: #{$value}vw #{$value}vh;
   }
+  }
+  @if $parameter == "margin" {
   .cs-margin-#{$value} {
     margin: #{$value}vw #{$value}vh;
   }
-}
-
-$fl_values: left, right, none, inherit;
-@each $fl_value in $fl_values {
-  .cs-float-#{$fl_value} {
-    float: #{$fl_value};
   }
 }
+
+  @if $parameter == "float" {
+  $fl_values: left, right, none, inherit;
+    @each $fl_value in $fl_values {
+    .cs-float-#{$fl_value} {
+      float: #{$fl_value};
+    }
+  }
+
+  }
 .cs-column {
   float: left;
 }
@@ -60,25 +77,33 @@ $fl_values: left, right, none, inherit;
   }
 }
 
-$pos_values: static, relative, fixed, absolute, sticky;
-@each $pos_value in $pos_values {
-  .cs-position-#{$pos_value} {
-    position: #{$pos_value};
+  @if $parameter == "position" {
+  $pos_values: static, relative, fixed, absolute, sticky;
+    @each $pos_value in $pos_values {
+      .cs-position-#{$pos_value} {
+        position: #{$pos_value};
+      }
+    }
   }
-}
+
 
 .cs-non-select{
     user-select: none;
     -webkit-user-select: none;
 }
 
-@for $value from 1 to 5 {
-  .cs-fade-#{$value} {
-    animation: fade infinite #{$value}s;
-  }
-  @keyframes fade {
-    50% {
-      opacity: .3
+  @if $parameter == "fade" {
+    @for $value from 1 to 5 {
+    .cs-fade-#{$value} {
+      animation: fade infinite #{$value}s;
+    }
+    @keyframes fade {
+      50% {
+        opacity: .3
+      }
     }
   }
+  }
+
 }
+

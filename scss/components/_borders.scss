@@ -1,17 +1,30 @@
-$bds-values: solid, dotted, dashed;
-@each $bds-value in $bds-values {
-    .cs-border-style-#{$bds-value} {
-        border-style: #{$bds-value}
+$build_at_runtime: border-style, border-width, border-radius;
+
+@each $parameter in $build_at_runtime {
+
+    @if $parameter == "border-style" {
+        $bds-values: solid, dotted, dashed;
+        @each $bds-value in $bds-values {
+            .cs-border-style-#{$bds-value} {
+                border-style: #{$bds-value}
+            }
     }
-}
-@for $value from 1 to 10 {
-    .cs-border-width-#{$value} {
-        border-width: #{$value}px;
     }
-}
-$radius-values: (none: 0px, rounded: 5px, curved: 12px);
-@each $radius-value, $radius-px in $radius-values {
-    .cs-border-radius-#{$radius-value} {
-            border-radius: $radius-px;
+
+    @if $parameter == "border-width" {
+        @for $value from 1 to 10 {
+            .cs-border-width-#{$value} {
+                border-width: #{$value}px;
+            }
+        }
+    }
+
+    @if $parameter == "border-radius" {
+        $radius-values: (none: 0px, rounded: 5px, curved: 12px);
+        @each $radius-value, $radius-px in $radius-values {
+            .cs-border-radius-#{$radius-value} {
+                    border-radius: $radius-px;
+            }
+        }
     }
 }

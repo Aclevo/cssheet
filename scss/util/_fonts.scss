@@ -1,3 +1,8 @@
+$build_at_runtime: fonts, text-align, font-size, text-decoration, word-wrap;
+
+@each $parameter in $build_at_runtime {
+
+    @if $parameter == "fonts" {
 .cs-font {
     &-arial {
         font-family: Arial, Helvetica, sans-serif;
@@ -18,30 +23,40 @@
         font-family: serif;
     }
 }
+    }
 
+    @if $parameter == "text-align" {
 $ta-values: left, center, right;
 @each $ta-value in $ta-values {
     .cs-text-align-#{$ta-value} {
         text-align: #{$ta-value};
     }
 }
+    }
 
+    @if $parameter == "font-size" {
 @for $value from 1 to 10 {
     .cs-font-size-#{$value} {
         font-size: #{$value}vw;
     }
 }
+    }
 
+    @if $parameter == "text-decoration" {
 $td-values: bold, underline, none;
 @each $td-value in $td-values {
     .cs-text-decoration-#{$td-value} {
         text-decoration: #{$td-value};
     }
 }
+    }
 
+    @if $parameter == "word-wrap" {
 $wdw-values: normal, break-word, initial, inherit;
 @each $wdw-value in $wdw-values {
     .cs-word-wrap-#{$wdw-value} {
         word-wrap: #{$wdw-value};
+    }
+}
     }
 }

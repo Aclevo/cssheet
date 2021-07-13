@@ -1,8 +1,8 @@
 $all_colors_hsla: (red: 360, orange: 35, yellow: 45, aqua: 168, blue: 231, purple: 275);
 @function make_color($color_name, $color_value_hsla, $color_brightness) {
     $calculate_color: percentage($color_brightness / 10);
-    @debug $color_value_hsla, 100%, percentage($color_brightness / 10);
-    @debug hsla($color_value_hsla, 100%, percentage($color_brightness / 10), 1);
+    // @debug $color_value_hsla, 100%, percentage($color_brightness / 10);
+    // @debug hsla($color_value_hsla, 100%, percentage($color_brightness / 10), 1);
     @return hsla($color_value_hsla, 100%, percentage($color_brightness / 10), 1);
 }
 $contrasts: white, black;

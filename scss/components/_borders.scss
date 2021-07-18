@@ -1,3 +1,7 @@
+// _borders.scss
+// Parameters to build at build time:
+// border-style, border-width, border-radius
+
 $build_at_runtime: border-style, border-width, border-radius;
 
 @each $parameter in $build_at_runtime {

@@ -1,3 +1,7 @@
+// _fonts.scss
+// Parameters to build at build time:
+// fonts, text-align, font-size, text-decoration, word-wrap
+
 $build_at_runtime: fonts, text-align, font-size, text-decoration, word-wrap;
 
 @each $parameter in $build_at_runtime {

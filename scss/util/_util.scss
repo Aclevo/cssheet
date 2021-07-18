@@ -1,3 +1,7 @@
+// _util.scss
+// Parameters to build at build time:
+// width, height, opacity, padding, margin, float, position, fade
+
 $build_at_runtime: width, height, opacity, padding, margin, float, position, fade;
 
 @each $parameter in $build_at_runtime {

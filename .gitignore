@@ -1,3 +1,4 @@
 node_modules/*
 .vscode/*
 .sass-cache/*
+package-lock.json

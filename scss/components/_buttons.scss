@@ -1,4 +1,25 @@
-$border-color: none;
+@mixin include_border($bd_style: None) {
+    @if $bd_style != None {
+        border: 3px solid $bd_style;
+    }
+    @content;
+}
+
+@mixin include_hover($hv_fg, $hv_bg) {
+    &:hover {
+        @if $hv_fg != None {
+            color: $hv_fg;
+        }
+        @if $hv_bg != None {
+            background-color: $hv_bg;
+        }
+    }
+}
+
+@mixin button_prop($fg, $bg: $fg) {
+    color: $fg;
+    background-color: $bg;
+}
 
 %button-default {
     text-decoration: none;
@@ -10,79 +31,39 @@ $border-color: none;
     }
 }
 
-%button-bordered {
-    @extend %button-default;
-    border: 3px solid $border-color;
-}
-
 .cs-button {
     &-git {
+        $git-fg: white; $git-bg: rgb(31, 30, 30);
         @extend %button-default;
-        color: white;
-        background-color: rgb(31, 30, 30);
-        &:hover {
-            background-color: rgb(0, 0, 0);
-        }
-        &-border {
-            @extend %button-bordered;
-            color: rgb(31, 30, 30);
-            $border-color: rgb(31, 30, 30);
-            &:hover {
-            color: white;
-            background-color: rgb(31, 30, 30);
-            }
-        }
+        @include button_prop($git-fg, $git-bg);
+        @include include_border($git-bg);
+        @include include_hover(white, $git-bg);
     }
     &-success {
+        $success-fg: white; $success-bg: #58d158;
         @extend %button-default;
-        color: rgb(255, 255, 255);
-        background-color: #58d158;
-        &:hover {
-            background-color: rgb(56, 173, 62)
+        @include button_prop($success-fg, $success-bg);
+        @include include_border($success-bg) {
+            @include include_hover($success-fg, $success-bg);
         }
-        &-border {
-            @extend %button-bordered;
-            color: #58d158;
-            $border-color:#58d158;
-            &:hover {
-            color: white;
-            background-color: #58d158;
-            }
-
+        @include include_hover(None, rgb(56, 173, 62));
         }
     }
-    &-restart {
+    &-warning {
+        $warning-fg: white; $warning-bg: #f8f859;
         @extend %button-default;
-        color: rgb(255, 255, 255);
-        background-color: #f8f859;
-        &:hover {
-            background-color: rgb(204, 204, 53);
+        @include button_prop($warning-fg, $warning-bg);
+        @include include_border($warning-bg) {
+            @include include_hover($warning-fg, $warning-bg)
         }
-        &-border {
-            @extend %button-bordered;
-            color: #f8f859;
-            $border-color:#f8f859;
-            &:hover {
-                color: white;
-                background-color: #f8f859;
-            }
-        }
+        @include include_hover(None, rgb(204, 204, 53));
     }
     &-error {
+        $error-fg: white; $error-bg: rgb(238, 76, 76);
         @extend %button-default;
-        color: rgb(255, 255, 255);
-        background-color: rgb(238, 76, 76);
-        &:hover {
-            background-color: rgb(204, 53, 53);
+        @include button_prop($error-fg, $error-bg);
+        @include include_border($error-bg) {
+            @include include_hover($error-fg, $error-bg);
         }
-        &-border {
-            @extend %button-bordered;
-            color: rgb(238, 76, 76);
-            $border-color:rgb(238, 76, 76);
-            &:hover {
-                color: white;
-                background-color: rgb(238, 76, 76);
-            }
-        }
+        @include include_hover(None, rgb(204, 53, 53))
     }
-}

@@ -1,16 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 /*/
  * START VARIABLE SECTION 
 /*/
 /*/
  * END VARIABLE SECTION 
 /*/
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   color: #000000;
   background-color: #FFFFFF; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Garamond, serif; }
+  font-family: "Roboto", sans-serif; }
 
 a {
-  color: #485fc7; }
+  color: #264653; }
+
+.cs-is-primary {
+  color: #264653; }
+
+.cs-is-secondary {
+  color: #2a9d8f; }
+
+.cs-is-yellow {
+  color: #e9c46a; }
+
+.cs-is-red {
+  color: #e76f51; }
+
+.cs-is-orange {
+  color: #f4a261; }
+
+.cs-is-purple {
+  color: #855df7; }
+
+.cs-is-grey {
+  color: #9999a1; }
+
+.cs-is-black {
+  color: #000000; }
+
+.cs-is-white {
+  color: #FFFFFF; }
+
+.cs-font-is-primary {
+  font-family: "Noto Sans JP", sans-serif; }
+
+.cs-font-is-secondary {
+  font-family: "Roboto", sans-serif; }
+
+.cs-font-is-monospace {
+  font-family: monospace; }
+
+.cs-background-is-primary {
+  background-color: #264653; }
+
+.cs-background-is-secondary {
+  background-color: #2a9d8f; }
+
+.cs-background-is-yellow {
+  background-color: #e9c46a; }
+
+.cs-background-is-red {
+  background-color: #e76f51; }
+
+.cs-background-is-orange {
+  background-color: #f4a261; }
+
+.cs-background-is-purple {
+  background-color: #855df7; }
+
+.cs-background-is-grey {
+  background-color: #9999a1; }
+
+.cs-background-is-black {
+  background-color: #000000; }
+
+.cs-background-is-white {
+  background-color: #FFFFFF; }
+
+.cs {
+  padding: 10px; }

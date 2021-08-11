@@ -1,19 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 /*/
  * START VARIABLE SECTION 
 /*/
+$blue:  #264653;
+$cyan:  #2a9d8f;
+$yellow:#e9c46a;
+$orange:#f4a261;
+$red:   #e76f51;
+$purple:#855df7;
+$grey:  #9999a1;
+$black: #000000;
+$white: #FFFFFF;
 
-$primary-font:Helvetica, sans-serif;
-$secondary-font:Garamond, serif;
+$primary-font:'Noto Sans JP', sans-serif;
+$secondary-font:'Roboto', sans-serif;
+$monospace-font:monospace;
 
-$primary-color:hsl(229, 53%, 53%);
-$secondary-color:hsl(171, 100%, 41%);
+$primary-color:$blue;
+$secondary-color:$cyan;
 
-$text-color:#000000;
-$background-color:#FFFFFF;
+$text-color:$black;
+$background-color:$white;
 
 /*/
  * END VARIABLE SECTION 
 /*/
+
+* {
+    margin:0;
+    padding:0;
+}
 
 body {
     font-family:$primary-font;
@@ -28,3 +46,29 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color:$primary-color;
 }
+
+.cs-is-primary {color:$primary-color}
+.cs-is-secondary {color:$secondary-color}
+.cs-is-yellow {color:$yellow}
+.cs-is-red {color:$red}
+.cs-is-orange {color:$orange}
+.cs-is-purple {color:$purple}
+.cs-is-grey {color:$grey}
+.cs-is-black {color:$black}
+.cs-is-white {color:$white}
+
+.cs-font-is-primary {font-family:$primary-font}
+.cs-font-is-secondary {font-family:$secondary-font}
+.cs-font-is-monospace {font-family:$monospace-font}
+
+.cs-background-is-primary {background-color:$primary-color}
+.cs-background-is-secondary {background-color:$secondary-color}
+.cs-background-is-yellow {background-color:$yellow}
+.cs-background-is-red {background-color:$red}
+.cs-background-is-orange {background-color:$orange}
+.cs-background-is-purple {background-color:$purple}
+.cs-background-is-grey {background-color:$grey}
+.cs-background-is-black {background-color:$black}
+.cs-background-is-white {background-color:$white}
+
+.cs {padding:10px}

@@ -1,0 +1,32 @@
+/*/
+ * START VARIABLE SECTION 
+/*/
+
+$primary-font:Helvetica, sans-serif;
+$secondary-font:Garamond, serif;
+
+$primary-color:#6BC4FD;
+$secondary-color:#6526D9;
+
+$text-color:#000000;
+$background-color:#FFFFFF;
+
+/*/
+ * END VARIABLE SECTION 
+/*/
+
+body {
+    font-family:$primary-font;
+    color:$text-color;
+    background-color:$background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font;
+    color:$secondary-color;
+}
+
+a {
+    text-decoration:none;
+    color:$primary-color;
+}

@@ -8,7 +8,8 @@
 /*/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  transition: 0.2s; }
 
 body {
   font-family: "Noto Sans JP", sans-serif;
@@ -22,10 +23,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif; }
 
 a {
-  color: #264653; }
+  color: #2c647a; }
 
 .cs-is-primary {
-  color: #264653; }
+  color: #2c647a; }
 
 .cs-is-secondary {
   color: #2a9d8f; }
@@ -61,7 +62,7 @@ a {
   font-family: monospace; }
 
 .cs-background-is-primary {
-  background-color: #264653; }
+  background-color: #2c647a; }
 
 .cs-background-is-secondary {
   background-color: #2a9d8f; }
@@ -121,9 +122,55 @@ a {
 .cs-has-border-rounded {
   border-radius: 10px; }
 
+.cs-has-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
 .cs-box {
   padding: 20px;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   margin: 20px; }
+
+.cs-button.is-ghost {
+  border: none;
+  text-decoration: underline; }
+
+.cs-button.is-ghost:hover {
+  border: none; }
+
+.cs-button.is-text {
+  border: none;
+  text-decoration: underline; }
+
+.cs-button.is-text:hover {
+  background-color: #ededed;
+  border: none; }
+
+.cs-button.is-primary {
+  background-color: #2c647a;
+  color: #000000; }
+
+.cs-button.is-secondary {
+  background-color: #2a9d8f;
+  color: #000000; }
+
+.cs-button {
+  padding: 10px;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid #9999a1;
+  text-decoration: none; }
+
+.cs-button:hover {
+  border: 1px solid #000000; }
+
+.cs-button.is-large {
+  font-size: 2em; }
+
+.cs-button.is-medium {
+  font-size: 1.5em; }
+
+.cs-button.is-small {
+  font-size: 0.7em; }

@@ -4,7 +4,7 @@
 /*/
  * START VARIABLE SECTION 
 /*/
-$blue:  #264653;
+$blue:  #2c647a;
 $cyan:  #2a9d8f;
 $yellow:#e9c46a;
 $orange:#f4a261;
@@ -13,6 +13,7 @@ $purple:#855df7;
 $grey:  #9999a1;
 $black: #000000;
 $white: #FFFFFF;
+$light: #ededed;
 
 $primary-font:'Noto Sans JP', sans-serif;
 $secondary-font:'Roboto', sans-serif;
@@ -31,6 +32,7 @@ $background-color:$white;
 * {
     margin:0;
     padding:0;
+    transition:0.2s;
 }
 
 body {
@@ -103,10 +105,68 @@ a {
     border-radius:10px;
 }
 
+.cs-has-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
 .cs-box {
     padding:20px;
     background-color:$background-color;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius:10px;
     margin:20px;
+}
+
+.cs-button.is-ghost {
+    border:none;
+    text-decoration:underline;
+}
+
+.cs-button.is-ghost:hover {
+    border:none;
+}
+
+.cs-button.is-text {
+    border:none;
+    text-decoration:underline;
+}
+
+.cs-button.is-text:hover {
+    background-color:$light;
+    border:none;
+}
+
+.cs-button.is-primary {
+    background-color: $primary-color;
+    color:$text-color;
+}
+
+.cs-button.is-secondary {
+    background-color: $secondary-color;
+    color:$text-color;
+}
+
+.cs-button {
+    padding:10px;
+    border-radius:10px;
+    color:$text-color;
+    background-color:$background-color;
+    border:1px solid $grey;
+    text-decoration:none;
+}
+
+.cs-button:hover {
+    border:1px solid $black;
+}
+
+.cs-button.is-large {
+    font-size:2em;
+}
+
+.cs-button.is-medium {
+    font-size:1.5em;
+}
+
+.cs-button.is-small {
+    font-size:0.7em;
 }

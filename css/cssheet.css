@@ -91,22 +91,22 @@ a {
   padding: 10px;
   max-width: 100vw; }
 
-.cs-title {
+.cs-is-title {
   font-size: 3em; }
 
-.cs-subtitle {
+.cs-is-subtitle {
   font-size: 2em; }
 
-.cs-align-center {
+.cs-is-aligned-center {
   text-align: center; }
 
-.cs-align-left {
+.cs-is-aligned-left {
   text-align: left; }
 
-.cs-align-right {
+.cs-is-aligned-right {
   text-align: right; }
 
-.cs-align-justify {
+.cs-is-aligned-justify {
   text-align: justify; }
 
 .cs-columns {
@@ -115,7 +115,15 @@ a {
 .cs-columns > .cs-column {
   flex: 1;
   padding: 20px;
-  margin: 20px; }
+  margin: 20px;
+  border-radius: 10px; }
 
-.cs-border-rounded {
-  border-radius: 5px; }
+.cs-has-border-rounded {
+  border-radius: 10px; }
+
+.cs-box {
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 20px; }

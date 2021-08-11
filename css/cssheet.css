@@ -15,6 +15,9 @@ body {
   color: #000000;
   background-color: #FFFFFF; }
 
+html, body {
+  max-width: 100vw; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif; }
 
@@ -85,4 +88,34 @@ a {
   background-color: #FFFFFF; }
 
 .cs {
-  padding: 10px; }
+  padding: 10px;
+  max-width: 100vw; }
+
+.cs-title {
+  font-size: 3em; }
+
+.cs-subtitle {
+  font-size: 2em; }
+
+.cs-align-center {
+  text-align: center; }
+
+.cs-align-left {
+  text-align: left; }
+
+.cs-align-right {
+  text-align: right; }
+
+.cs-align-justify {
+  text-align: justify; }
+
+.cs-columns {
+  display: flex; }
+
+.cs-columns > .cs-column {
+  flex: 1;
+  padding: 20px;
+  margin: 20px; }
+
+.cs-border-rounded {
+  border-radius: 5px; }

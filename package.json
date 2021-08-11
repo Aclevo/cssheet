@@ -1,0 +1,15 @@
+{
+  "name": "cssheet",
+  "version": "0.0.0",
+  "description": "A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily!",
+  "main": "scss/cssheet.scss",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/cssheet.scss css/cssheet.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  }
+}

@@ -5,8 +5,8 @@
 $primary-font:Helvetica, sans-serif;
 $secondary-font:Garamond, serif;
 
-$primary-color:#6BC4FD;
-$secondary-color:#6526D9;
+$primary-color:hsl(229, 53%, 53%);
+$secondary-color:hsl(171, 100%, 41%);
 
 $text-color:#000000;
 $background-color:#FFFFFF;
@@ -23,10 +23,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $secondary-font;
-    color:$secondary-color;
 }
 
 a {
-    text-decoration:none;
     color:$primary-color;
 }

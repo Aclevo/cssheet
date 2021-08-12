@@ -174,3 +174,14 @@ a {
 
 .cs-button.is-small {
   font-size: 0.7em; }
+
+.cs-notification {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px; }
+
+.cs-link {
+  color: #2c647a; }
+
+.cs-link:hover {
+  color: #000000; }

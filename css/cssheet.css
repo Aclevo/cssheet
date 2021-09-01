@@ -111,12 +111,14 @@ a {
   text-align: justify; }
 
 .cs-columns {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .cs-columns > .cs-column {
+  min-width: 200px;
   flex: 1;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 2vw;
   border-radius: 10px; }
 
 .cs-has-border-rounded {
@@ -126,11 +128,11 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
 .cs-box {
-  padding: 20px;
+  padding: 10px;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  margin: 20px; }
+  margin: 10px; }
 
 .cs-button.is-ghost {
   border: none;
@@ -157,7 +159,9 @@ a {
 
 .cs-button {
   padding: 10px;
+  margin: 10px;
   border-radius: 10px;
+  display: inline-block;
   color: #000000;
   background-color: #FFFFFF;
   border: 1px solid #9999a1;
@@ -176,12 +180,27 @@ a {
   font-size: 0.7em; }
 
 .cs-notification {
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
-  margin: 20px; }
+  margin: 10px; }
 
 .cs-link {
   color: #2c647a; }
 
 .cs-link:hover {
   color: #000000; }
+
+.cs-container {
+  display: block;
+  margin: 10px;
+  padding: 10px; }
+
+.cs-card {
+  padding: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 10px; }
+
+.cs-card:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2); }

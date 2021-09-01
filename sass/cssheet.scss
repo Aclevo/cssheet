@@ -25,6 +25,12 @@ $secondary-color:$cyan;
 $text-color:$black;
 $background-color:$white;
 
+$column-min-width:200px;
+
+$default-margin:10px;
+$default-padding:10px;
+$column-spacing:2vw;
+
 /*/
  * END VARIABLE SECTION 
 /*/
@@ -78,7 +84,7 @@ a {
 .cs-background-is-white {background-color:$white}
 
 .cs {
-    padding:10px;
+    padding:$default-padding;
     max-width:100vw;
 }
 
@@ -92,12 +98,14 @@ a {
 
 .cs-columns {
     display:flex;
+    flex-wrap:wrap;
 }
 
 .cs-columns > .cs-column {
+    min-width:$column-min-width;
     flex:1;
-    padding:20px;
-    margin:20px;
+    padding:$default-padding;
+    margin:$column-spacing;
     border-radius:10px;
 }
 
@@ -110,11 +118,11 @@ a {
 }
 
 .cs-box {
-    padding:20px;
+    padding:$default-padding;
     background-color:$background-color;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius:10px;
-    margin:20px;
+    margin:$default-margin;
 }
 
 .cs-button.is-ghost {
@@ -147,8 +155,10 @@ a {
 }
 
 .cs-button {
-    padding:10px;
+    padding:$default-padding;
+    margin:$default-margin;
     border-radius:10px;
+    display:inline-block;
     color:$text-color;
     background-color:$background-color;
     border:1px solid $grey;
@@ -172,9 +182,9 @@ a {
 }
 
 .cs-notification {
-    padding:20px;
+    padding:$default-padding;
     border-radius:10px;
-    margin:20px;
+    margin:$default-margin;
 }
 
 .cs-link {
@@ -183,4 +193,22 @@ a {
 
 .cs-link:hover {
     color:$black;
+}
+
+.cs-container {
+    display:block;
+    margin:$default-margin;
+    padding:$default-padding;
+}
+
+.cs-card {
+    padding:$default-padding;
+    background-color:$background-color;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius:10px;
+    margin:$default-margin;
+}
+
+.cs-card:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
 }

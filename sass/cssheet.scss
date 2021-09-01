@@ -4,16 +4,16 @@
 /*/
  * START VARIABLE SECTION 
 /*/
-$blue:  #2c647a;
-$cyan:  #2a9d8f;
+$blue:  #4c81fb;
+$cyan:  #83ca86;
 $yellow:#e9c46a;
 $orange:#f4a261;
 $red:   #e76f51;
 $purple:#855df7;
-$grey:  #9999a1;
+$grey:  #1e222a;
 $black: #000000;
 $white: #FFFFFF;
-$light: #ededed;
+$light: #adadad;
 
 $primary-font:'Noto Sans JP', sans-serif;
 $secondary-font:'Roboto', sans-serif;
@@ -24,6 +24,14 @@ $secondary-color:$cyan;
 
 $text-color:$black;
 $background-color:$white;
+
+$link-hover-color:$grey;
+
+$shadow-color:rgba(0, 0, 0, 0.2);
+
+$text-button-hover-background:$light;
+$text-button-hover-color:$black;
+$button-border-color:$light;
 
 $column-min-width:200px;
 
@@ -114,13 +122,13 @@ a {
 }
 
 .cs-has-shadow {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 $shadow-color;
 }
 
 .cs-box {
     padding:$default-padding;
     background-color:$background-color;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 $shadow-color;
     border-radius:10px;
     margin:$default-margin;
 }
@@ -140,7 +148,8 @@ a {
 }
 
 .cs-button.is-text:hover {
-    background-color:$light;
+    background-color:$text-button-hover-background;
+    color:$text-button-hover-color;
     border:none;
 }
 
@@ -161,7 +170,7 @@ a {
     display:inline-block;
     color:$text-color;
     background-color:$background-color;
-    border:1px solid $grey;
+    border:1px solid $button-border-color;
     text-decoration:none;
 }
 
@@ -192,7 +201,7 @@ a {
 }
 
 .cs-link:hover {
-    color:$black;
+    color:$link-hover-color;
 }
 
 .cs-container {
@@ -204,11 +213,11 @@ a {
 .cs-card {
     padding:$default-padding;
     background-color:$background-color;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 $shadow-color;
     border-radius:10px;
     margin:$default-margin;
 }
 
 .cs-card:hover {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 6px 10px 0 $shadow-color;
 }

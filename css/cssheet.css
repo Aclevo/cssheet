@@ -23,13 +23,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif; }
 
 a {
-  color: #2c647a; }
+  color: #4c81fb; }
 
 .cs-is-primary {
-  color: #2c647a; }
+  color: #4c81fb; }
 
 .cs-is-secondary {
-  color: #2a9d8f; }
+  color: #83ca86; }
 
 .cs-is-yellow {
   color: #e9c46a; }
@@ -44,7 +44,7 @@ a {
   color: #855df7; }
 
 .cs-is-grey {
-  color: #9999a1; }
+  color: #1e222a; }
 
 .cs-is-black {
   color: #000000; }
@@ -62,10 +62,10 @@ a {
   font-family: monospace; }
 
 .cs-background-is-primary {
-  background-color: #2c647a; }
+  background-color: #4c81fb; }
 
 .cs-background-is-secondary {
-  background-color: #2a9d8f; }
+  background-color: #83ca86; }
 
 .cs-background-is-yellow {
   background-color: #e9c46a; }
@@ -80,7 +80,7 @@ a {
   background-color: #855df7; }
 
 .cs-background-is-grey {
-  background-color: #9999a1; }
+  background-color: #1e222a; }
 
 .cs-background-is-black {
   background-color: #000000; }
@@ -146,15 +146,16 @@ a {
   text-decoration: underline; }
 
 .cs-button.is-text:hover {
-  background-color: #ededed;
+  background-color: #adadad;
+  color: #000000;
   border: none; }
 
 .cs-button.is-primary {
-  background-color: #2c647a;
+  background-color: #4c81fb;
   color: #000000; }
 
 .cs-button.is-secondary {
-  background-color: #2a9d8f;
+  background-color: #83ca86;
   color: #000000; }
 
 .cs-button {
@@ -164,7 +165,7 @@ a {
   display: inline-block;
   color: #000000;
   background-color: #FFFFFF;
-  border: 1px solid #9999a1;
+  border: 1px solid #adadad;
   text-decoration: none; }
 
 .cs-button:hover {
@@ -185,10 +186,10 @@ a {
   margin: 10px; }
 
 .cs-link {
-  color: #2c647a; }
+  color: #4c81fb; }
 
 .cs-link:hover {
-  color: #000000; }
+  color: #1e222a; }
 
 .cs-container {
   display: block;

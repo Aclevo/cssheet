@@ -28,6 +28,8 @@ $background-color:$white;
 
 $link-hover-color:$grey;
 
+$border-width:3px;
+
 $shadow-color:rgba(0, 0, 0, 0.2);
 
 $text-button-hover-background:$light;
@@ -92,6 +94,26 @@ a {
 .cs-background-is-black {background-color:$black}
 .cs-background-is-white {background-color:$white}
 
+.cs-border {border-width:$border-width;}
+
+.cs-border-is-primary {border-color: $primary-color}
+.cs-border-is-secondary {border-color: $secondary-color}
+.cs-border-is-yellow {border-color: $yellow}
+.cs-border-is-red {border-color: $red}
+.cs-border-is-orange {border-color: $orange}
+.cs-border-is-purple {border-color: $purple}
+.cs-border-is-grey {border-color: $grey}
+.cs-border-is-black {border-color: $black}
+.cs-border-is-white {border-color: $white}
+
+.cs-border-is-solid {border-style: solid;}
+.cs-border-is-dotted {border-style:dotted;}
+.cs-border-is-dashed {border-style:dashed;}
+.cs-border-is-double {border-style:double;}
+.cs-border-is-groove {border-style:groove;}
+.cs-border-is-ridge {border-style:ridge;}
+.cs-border-is-none {border-style:none;}
+
 .cs {
     padding:$default-padding;
     max-width:100vw;
@@ -100,6 +122,9 @@ a {
 .cs-code {
     font-family:$monospace-font;
 }
+
+.cs-has-padding {padding:$default-padding;}
+.cs-has-margin {margin:$default-margin;}
 
 .cs-is-title {font-size:3em}
 .cs-is-subtitle {font-size:2em}

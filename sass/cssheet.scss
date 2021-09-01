@@ -251,3 +251,26 @@ a {
 .cs-card:hover {
     box-shadow: 0 6px 10px 0 $shadow-color;
 }
+
+.cs-float-left {float:left;}
+.cs-float-right {float:right;}
+.cs-float-none {float:none;}
+
+.cs-display-block {display:block;}
+.cs-display-flex {display:flex;}
+.cs-display-inline-block {display:inline-block;}
+.cs-display-none {display:none;}
+.cs-display-grid {display:grid;}
+.cs-display-inline {display:inline;}
+.cs-display-inline-grid {display:inline-grid;}
+.cs-display-flow-root {display:flow-root;}
+
+.cs-flex-1 {flex:1;}
+.cs-flex-2 {flex:2;}
+.cs-flex-3 {flex:3;}
+
+.cs-position-relative {position:relative;}
+.cs-position-fixed {position:fixed;}
+.cs-position-static {position:static;}
+.cs-position-sticky {position:sticky;}
+.cs-position-absolute {position:absolute;}

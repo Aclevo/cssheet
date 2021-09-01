@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Source+Code+Pro:wght@600&display=swap");
 /*/
  * START VARIABLE SECTION 
 /*/
@@ -20,7 +21,7 @@ html, body {
   max-width: 100vw; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 a {
   color: #4c81fb; }
@@ -56,10 +57,10 @@ a {
   font-family: "Noto Sans JP", sans-serif; }
 
 .cs-font-is-secondary {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .cs-font-is-monospace {
-  font-family: monospace; }
+  font-family: "Source Code Pro", monospace; }
 
 .cs-background-is-primary {
   background-color: #4c81fb; }
@@ -91,6 +92,9 @@ a {
 .cs {
   padding: 10px;
   max-width: 100vw; }
+
+.cs-code {
+  font-family: "Source Code Pro", monospace; }
 
 .cs-is-title {
   font-size: 3em; }

@@ -5,6 +5,8 @@ To add CSSheet to your webpage, add the following to your html `<head>` tag:
 <link rel="stylesheet" href="https://gitcdn.xyz/repo/Cobweb-Aclevo/cssheet/main/css/cssheet.min.css">
 ```
 
+> NOTE: It is recommended to put everything inside of a `div` tag with a `cs` class
+
 ## Custom Theme
 If you want to use CSSheet with your own custom theme, you will need to install Sass. You can use npm to do that:
 ```npm

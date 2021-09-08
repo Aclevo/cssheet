@@ -2,8 +2,20 @@
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily!
 
 ## Table of Contents
-* [Home](/)
-* [Quick Start](/quick_start)
+* Getting Started
+  * [Home](/)
+  * [Quick Start](/quick_start)
+* Colors
+  * [Background Color](/background_color)
+  * [Foreground Color](/foreground_color)
+  * [Border Color](/border_color)
+* [Fonts](/fonts)
+* Layout
+  * [Margin and Padding](/margin_padding)
+  * [Alignment](/alignment)
+  * [Columns](/columns)
+  * [Borders](/border)
+
 
 ## Made with love by Cob:web Development and our Open source contributors:
 

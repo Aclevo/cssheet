@@ -15,6 +15,10 @@ The official repository for CSSheet! A simple, easy to learn and bootstrap-compa
   * [Alignment](/alignment)
   * [Columns](/columns)
   * [Borders](/border)
+* Elements
+  * [Buttons](/buttons)
+  * [Navbar](/navbar)
+  * [Footer](/footer)
 
 
 ## Made with love by Cob:web Development and our Open source contributors:

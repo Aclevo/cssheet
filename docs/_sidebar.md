@@ -11,7 +11,14 @@
   * [Alignment](/alignment)
   * [Columns](/columns)
   * [Borders](/border)
+  * [Display](/display)
+  * [Position](/position)
 * Elements
   * [Buttons](/buttons)
   * [Navbar](/navbar)
   * [Footer](/footer)
+  * [Card](/card)
+* Text
+  * [Size](text_size)
+* Misc
+  * [Shadows](/shadow)

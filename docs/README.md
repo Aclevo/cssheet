@@ -1,8 +1,25 @@
 # CSSheet
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily!
 
-# How to use
-See our [documentation](#)
+## Table of Contents
+* Getting Started
+  * [Home](/)
+  * [Quick Start](/quick_start)
+* Colors
+  * [Background Color](/background_color)
+  * [Foreground Color](/foreground_color)
+  * [Border Color](/border_color)
+* [Fonts](/fonts)
+* Layout
+  * [Margin and Padding](/margin_padding)
+  * [Alignment](/alignment)
+  * [Columns](/columns)
+  * [Borders](/border)
+* Elements
+  * [Buttons](/buttons)
+  * [Navbar](/navbar)
+  * [Footer](/footer)
+
 
 ## Made with love by Cob:web Development and our Open source contributors:
 
@@ -18,4 +35,3 @@ Adam Salt - Former Lead Developer
 
 ### Please join the Cob:web-Aclevo discord to talk to us and contribute to our projects: https://discord.gg/z3GXvGtuek
 
-* Please be aware that our CDN automatically updates, however it may take up to 2 hours for the cache to clear on the CDN.

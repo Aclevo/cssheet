@@ -42,6 +42,13 @@ $default-margin:10px;
 $default-padding:10px;
 $column-spacing:2vw;
 
+$align_values: "center", "left", "right", "justify";
+$border_values: "solid", "dotted", "dashed", "double", "groove", "ridge", "none";
+$color_values: $blue, $cyan, $yellow, $orange, $red, $purple, $grey, $black, $white, $light;
+$display_values: "block", "flex", "inline-block", "none", "grid", "inline", "inline-grid", "flow-root";
+$float_values: "left", "right", "none";
+$position_values: "relative", "fixed", "static", "sticky", "absolute";
+
 /*/
  * END VARIABLE SECTION 
 /*/
@@ -73,15 +80,11 @@ a {
     color:$primary-color;
 }
 
-.cs-is-primary {color:$primary-color}
-.cs-is-secondary {color:$secondary-color}
-.cs-is-yellow {color:$yellow}
-.cs-is-red {color:$red}
-.cs-is-orange {color:$orange}
-.cs-is-purple {color:$purple}
-.cs-is-grey {color:$grey}
-.cs-is-black {color:$black}
-.cs-is-white {color:$white}
+@each $color in $color_values {
+    .cs-is-#{$color} {color: $color}
+    .cs-background-is-#{$color} {background-color: $color}
+    .cs-border-is-#{$color} {border-color: $color}
+}
 
 .cs-font-is-primary {font-family:$primary-font}
 .cs-font-is-secondary {font-family:$secondary-font}
@@ -89,33 +92,15 @@ a {
 
 .cs-background-is-primary {background-color:$primary-color}
 .cs-background-is-secondary {background-color:$secondary-color}
-.cs-background-is-yellow {background-color:$yellow}
-.cs-background-is-red {background-color:$red}
-.cs-background-is-orange {background-color:$orange}
-.cs-background-is-purple {background-color:$purple}
-.cs-background-is-grey {background-color:$grey}
-.cs-background-is-black {background-color:$black}
-.cs-background-is-white {background-color:$white}
 
 .cs-border {border-width:$border-width;}
 
 .cs-border-is-primary {border-color: $primary-color}
 .cs-border-is-secondary {border-color: $secondary-color}
-.cs-border-is-yellow {border-color: $yellow}
-.cs-border-is-red {border-color: $red}
-.cs-border-is-orange {border-color: $orange}
-.cs-border-is-purple {border-color: $purple}
-.cs-border-is-grey {border-color: $grey}
-.cs-border-is-black {border-color: $black}
-.cs-border-is-white {border-color: $white}
 
-.cs-border-is-solid {border-style: solid;}
-.cs-border-is-dotted {border-style:dotted;}
-.cs-border-is-dashed {border-style:dashed;}
-.cs-border-is-double {border-style:double;}
-.cs-border-is-groove {border-style:groove;}
-.cs-border-is-ridge {border-style:ridge;}
-.cs-border-is-none {border-style:none;}
+@each $border in $border_values {
+    .cs.border-is-#{$border} {border-style: $border;}
+}
 
 .cs {
     padding:$default-padding;
@@ -132,10 +117,9 @@ a {
 .cs-is-title {font-size:3em}
 .cs-is-subtitle {font-size:2em}
 
-.cs-is-aligned-center {text-align:center}
-.cs-is-aligned-left {text-align:left}
-.cs-is-aligned-right {text-align:right}
-.cs-is-aligned-justify {text-align:justify}
+@each $align in $align_values {
+    .cs-is-aligned-#{$align} {text-align: $align;}
+}
 
 .cs-columns {
     display:flex;
@@ -169,21 +153,19 @@ a {
 .cs-button.is-ghost {
     border:none;
     text-decoration:underline;
-}
-
-.cs-button.is-ghost:hover {
-    border:none;
+    &:hover {
+        border: none;
+    }
 }
 
 .cs-button.is-text {
     border:none;
     text-decoration:underline;
-}
-
-.cs-button.is-text:hover {
-    background-color:$text-button-hover-background;
-    color:$text-button-hover-color;
-    border:none;
+    &:hover {
+        background-color:$text-button-hover-background;
+        color:$text-button-hover-color;
+        border:none;
+    }
 }
 
 .cs-button.is-primary {
@@ -205,22 +187,18 @@ a {
     background-color:$background-color;
     border:1px solid $button-border-color;
     text-decoration:none;
-}
-
-.cs-button:hover {
-    border:1px solid $black;
-}
-
-.cs-button.is-large {
-    font-size:2em;
-}
-
-.cs-button.is-medium {
-    font-size:1.5em;
-}
-
-.cs-button.is-small {
-    font-size:0.7em;
+    &:hover {
+        border:1px solid $black;
+    }
+    .is-large {
+        font-size: 2em;
+    }
+    .is-medium {
+        font-size: 1.5em;
+    }
+    .is-small {
+        font-size: 0.7em;
+    }
 }
 
 .cs-notification {
@@ -231,10 +209,9 @@ a {
 
 .cs-link {
     color:$blue;
-}
-
-.cs-link:hover {
-    color:$link-hover-color;
+    &:hover {
+        color: $link-hover-color;
+    }
 }
 
 .cs-container {
@@ -249,40 +226,44 @@ a {
     box-shadow: 0 4px 8px 0 $shadow-color;
     border-radius:10px;
     margin:$default-margin;
+    &:hover {
+        box-shadow: 0 6px 10px 0 $shadow-color;
+    }
+    
 }
 
-.cs-card:hover {
-    box-shadow: 0 6px 10px 0 $shadow-color;
+@each $float in $float_values {
+    .cs-float-#{$float} {float: $float;}
 }
 
-.cs-float-left {float:left;}
-.cs-float-right {float:right;}
-.cs-float-none {float:none;}
-
-.cs-display-block {display:block;}
-.cs-display-flex {display:flex;}
-.cs-display-inline-block {display:inline-block;}
-.cs-display-none {display:none;}
-.cs-display-grid {display:grid;}
-.cs-display-inline {display:inline;}
-.cs-display-inline-grid {display:inline-grid;}
-.cs-display-flow-root {display:flow-root;}
+@each $display in $display_values {
+    .cs-display-#{$display} {display: $display;}
+}
 
 .cs-flex-1 {flex:1;}
 .cs-flex-2 {flex:2;}
 .cs-flex-3 {flex:3;}
 
-.cs-position-relative {position:relative;}
-.cs-position-fixed {position:fixed;}
-.cs-position-static {position:static;}
-.cs-position-sticky {position:sticky;}
-.cs-position-absolute {position:absolute;}
-
+@each $position in $position_values {
+    .cs-position-#{$position} {position: $position;}
+}
 
 .cs-nav {
     width:100vw;
     background-color: $grey;
     overflow: hidden;
+    a {
+        float: left;
+        display: block;
+        background-color:$grey;
+        color: $white;
+        text-align: center;
+        padding: $default-padding;
+        text-decoration: none;
+        &:hover {
+            background-color: $light;
+            color: $black;
+    }
 }
 
 .cs-nav-fixed {
@@ -290,22 +271,6 @@ a {
     top:0;
     left:0;
 }
-
-.cs-nav a {
-    float: left;
-    display: block;
-    background-color:$grey;
-    color: $white;
-    text-align: center;
-    padding: $default-padding;
-    text-decoration: none;
-}
-
-.cs-nav a:hover {
-    background-color: $light;
-    color: $black;
-}
-
 
 @media screen and (max-width: 600px) {
     .cs-nav a:not(:first-child) {display: none;}

@@ -1,0 +1,52 @@
+/*
+// Use this file to set your custom theme. 
+// Read https://cobweb-aclevo.github.io/cssheet/#/quick_start for more info.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Source+Code+Pro:wght@600&display=swap');
+
+$blue:  #4c81fb;
+$cyan:  #83ca86;
+$yellow:#e9c46a;
+$orange:#f4a261;
+$red:   #e76f51;
+$purple:#855df7;
+$grey:  #1e222a;
+$black: #000000;
+$white: #FFFFFF;
+$light: #adadad;
+
+$primary-font:'Noto Sans JP', sans-serif;
+$secondary-font:'Open Sans', sans-serif;
+$monospace-font:'Source Code Pro', monospace;
+
+$primary-color:$blue;
+$secondary-color:$cyan;
+
+$text-color:$black;
+$background-color:$white;
+
+$link-hover-color:$grey;
+
+$border-width:3px;
+
+$shadow-color:rgba(0, 0, 0, 0.2);
+
+$text-button-hover-background:$light;
+$text-button-hover-color:$black;
+$button-border-color:$light;
+
+$column-min-width:200px;
+
+$default-margin:10px;
+$default-padding:10px;
+$column-spacing:2vw;
+
+$align_values: "center", "left", "right", "justify";
+$border_values: "solid", "dotted", "dashed", "double", "groove", "ridge", "none";
+$color_values: $blue, $cyan, $yellow, $orange, $red, $purple, $grey, $black, $white, $light;
+$display_values: "block", "flex", "inline-block", "none", "grid", "inline", "inline-grid", "flow-root";
+$float_values: "left", "right", "none";
+$position_values: "relative", "fixed", "static", "sticky", "absolute";

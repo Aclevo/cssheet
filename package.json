@@ -9,7 +9,7 @@
   },
   "scripts": {
     "css-build": "node-sass --omit-source-map-url sass/cssheet.scss css/cssheet.css",
-    "css-watch": "npm run css-build -- --watch",
+    "css-watch": "npm run css-build --watch",
     "start": "npm run css-watch"
   }
 }

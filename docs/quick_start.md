@@ -16,8 +16,8 @@ Then, clone the CSSheet repository:
 ```git
 git clone https://github.com/Cobweb-Aclevo/cssheet
 ```
-Go to `cssheet/sass/` and open the `cssheet.scss` file.
-At the top of the file, you will find many scss variables, which you can edit to change the theme. The following table describes what each variable controls:
+Go to `cssheet/sass/` and open the `variables.scss` file.
+There you will find many scss variables, which you can edit to change the theme. The following table describes what each variable controls:
 
 | Variable                        | Type   | Purpose                                                                                   |
 |---------------------------------|--------|-------------------------------------------------------------------------------------------|

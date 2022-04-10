@@ -2,13 +2,13 @@
 The official repository for CSSheet! A simple, easy to learn and bootstrap-compatible CSS framework which allows you to make great websites easily!
 
 # How to use
-See our [documentation](https://cobweb-aclevo.github.io/cssheet/#/)
+See our [documentation](https://teamcobweb.github.io/cssheet/#/)
 
 ## Made with love by Cob:web Development and our Open source contributors:
 
-Adam Salhi - Lead Developer
+TheOceanBreeze - Fixing the docs link, Former Lead Dev
 
-Reasonably Selenium - Former Lead Developer
+Adam Salhi - Lead Developer
 
 Jaiden Collins - Former Lead Developer
 

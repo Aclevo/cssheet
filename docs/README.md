@@ -21,7 +21,7 @@ The official repository for CSSheet! A simple, easy to learn and bootstrap-compa
   * [Footer](/footer)
 
 
-## Made with love by Cob:web Development and our Open source contributors:
+## Made with love by Aclevo and our Open source contributors:
 
 Adam Salhi - Lead Developer
 
@@ -33,5 +33,5 @@ Alex Carson - Former Lead Developer
 
 Adam Salt - Former Lead Developer
 
-### Please join the Cob:web-Aclevo discord to talk to us and contribute to our projects: https://discord.gg/z3GXvGtuek
+### Please join the Aclevo discord to talk to us and contribute to our projects: https://discord.gg/C6QVUKnJRq
 

@@ -25,7 +25,7 @@ The official repository for CSSheet! A simple, easy to learn and bootstrap-compa
 
 Adam Salhi - Lead Developer
 
-Reasonably Selenium - Former Lead Developer
+TheOceanBreeze - Former Lead Developer
 
 Jaiden Collins - Former Lead Developer
 

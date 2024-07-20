@@ -2,7 +2,7 @@
 To add CSSheet to your webpage, add the following to your html `<head>` tag:
 
 ```html
-<link rel="stylesheet" href="https://gitcdn.xyz/repo/Cobweb-Aclevo/cssheet/main/css/cssheet.min.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/Aclevo/cssheet/main/css/cssheet.min.css">
 ```
 
 > NOTE: It is recommended to put everything inside of a `div` tag with a `cs` class

@@ -14,7 +14,7 @@ npm install -g sass
 ```
 Then, clone the CSSheet repository:
 ```git
-git clone https://github.com/Cobweb-Aclevo/cssheet
+git clone https://github.com/Aclevo/cssheet
 ```
 Go to `cssheet/sass/` and open the `variables.scss` file.
 There you will find many scss variables, which you can edit to change the theme. The following table describes what each variable controls:

@@ -23,9 +23,9 @@ The official repository for CSSheet! A simple, easy to learn and bootstrap-compa
 
 ## Made with love by Aclevo and our Open source contributors:
 
-Adam Salhi - Lead Developer
+TheOceanBreeze - Lead Developer
 
-TheOceanBreeze - Former Lead Developer
+Adam Salhi - Former Lead Developer
 
 Jaiden Collins - Former Lead Developer
 

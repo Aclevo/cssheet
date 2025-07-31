@@ -6,9 +6,9 @@ See our [documentation](https://aclevo.github.io/cssheet/#/)
 
 ## Made with love by Aclevo and our Open source contributors:
 
-TheOceanBreeze - Fixing the docs link, Former Lead Dev
+TheOceanBreeze - Fixing the docs link, Lead Dev
 
-Adam Salhi - Lead Developer
+Adam Salhi - Former Lead Developer
 
 Jaiden Collins - Former Lead Developer
 

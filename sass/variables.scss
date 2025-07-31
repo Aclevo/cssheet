@@ -3,6 +3,7 @@
 // Read https://aclevo.github.io/cssheet/#/quick_start for more info.
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Source+Code+Pro:wght@600&display=swap');
@@ -18,6 +19,7 @@ $black: #000000;
 $white: #FFFFFF;
 $light: #adadad;
 
+$inter-font:'Inter', sans-serif;
 $primary-font:'Noto Sans JP', sans-serif;
 $secondary-font:'Open Sans', sans-serif;
 $monospace-font:'Source Code Pro', monospace;

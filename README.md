@@ -16,6 +16,6 @@ Alex Carson - Former Lead Developer
 
 Adam Salt - Former Lead Developer
 
-### Please join the Aclevo discord to talk to us and contribute to our projects: [https://discord.gg/C6QVUKnJRq](https://discord.gg/C6QVUKnJRq)
+### Please join the Aclevo Discord to talk to us and contribute to our projects: [https://discord.gg/C6QVUKnJRq](https://discord.gg/C6QVUKnJRq)
 
 * Please be aware that our CDN automatically updates, however it may take up to 2 hours for the cache to clear on the CDN.
